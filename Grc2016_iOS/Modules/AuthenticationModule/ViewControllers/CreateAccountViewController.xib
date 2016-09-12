@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateAccountViewController" customModule="Grc2016_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conectate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3S-PA-NtX">
+                    <rect key="frame" x="59" y="35" width="203" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Bn5-wk-g4F"/>
+                        <constraint firstAttribute="width" constant="203" id="j4g-Gm-kCc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sincroniza tus estaciones y contenido del Grupo Radio Centro entre tus dispositivios." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxt-wL-Gs4">
+                    <rect key="frame" x="45" y="68" width="231" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="73A-cd-NSZ"/>
+                        <constraint firstAttribute="height" constant="65" id="WGZ-iY-9Ot"/>
+                        <constraint firstAttribute="width" constant="231" id="nne-Ie-8AH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="73A-cd-NSZ"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="73A-cd-NSZ"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNF-JN-txD">
+                    <rect key="frame" x="75" y="174" width="170" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Me3-qp-ljg"/>
+                        <constraint firstAttribute="width" constant="170" id="Qch-Nt-9sk"/>
+                    </constraints>
+                    <state key="normal" title="Facebook">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="facebookButtonTapped:" destination="-1" eventType="touchUpInside" id="War-4E-7o7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ui-0W-DbY">
+                    <rect key="frame" x="75" y="236" width="170" height="30"/>
+                    <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="R5m-vT-obL"/>
+                        <constraint firstAttribute="width" constant="170" id="eCE-AP-y3L"/>
+                    </constraints>
+                    <state key="normal" title="Twitter">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="twitterButtonTapped:" destination="-1" eventType="touchUpInside" id="pAZ-ai-yfL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucU-cd-PPu">
+                    <rect key="frame" x="75" y="298" width="170" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="cCk-zD-rfG"/>
+                        <constraint firstAttribute="width" constant="170" id="pnW-Qc-dCD"/>
+                    </constraints>
+                    <state key="normal" title="Google Plus">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="googlePlusButtonTapped:" destination="-1" eventType="touchUpInside" id="cu0-hg-vaf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agN-U5-Fh5">
+                    <rect key="frame" x="75" y="360" width="170" height="30"/>
+                    <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="T8z-Cw-Xd1"/>
+                        <constraint firstAttribute="width" constant="170" id="UM0-K4-nAU"/>
+                    </constraints>
+                    <state key="normal" title="Omitir">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="omitirButtonTapped:" destination="-1" eventType="touchUpInside" id="Cok-uM-4KQ"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kwh-Rz-zia">
+                    <rect key="frame" x="75" y="426" width="170" height="86"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="170" id="BNw-gv-boE"/>
+                        <constraint firstAttribute="height" constant="86" id="V2l-kc-7Ve"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="agN-U5-Fh5" firstAttribute="top" secondItem="ucU-cd-PPu" secondAttribute="bottom" constant="32" id="6GM-Ct-AZN"/>
+                <constraint firstItem="zNF-JN-txD" firstAttribute="top" secondItem="Qxt-wL-Gs4" secondAttribute="bottom" constant="41" id="8a6-id-LhB"/>
+                <constraint firstItem="agN-U5-Fh5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Anv-CN-HgQ"/>
+                <constraint firstItem="ucU-cd-PPu" firstAttribute="top" secondItem="5Ui-0W-DbY" secondAttribute="bottom" constant="32" id="Df2-Gl-q3M"/>
+                <constraint firstItem="Kwh-Rz-zia" firstAttribute="top" secondItem="agN-U5-Fh5" secondAttribute="bottom" constant="36" id="H4f-R2-II1"/>
+                <constraint firstItem="ucU-cd-PPu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IYb-Np-KS0"/>
+                <constraint firstItem="5Ui-0W-DbY" firstAttribute="top" secondItem="zNF-JN-txD" secondAttribute="bottom" constant="32" id="Ib0-NY-io9"/>
+                <constraint firstItem="5Ui-0W-DbY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="K9G-xq-Yn1"/>
+                <constraint firstItem="Kwh-Rz-zia" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KkY-Y3-UOe"/>
+                <constraint firstItem="A3S-PA-NtX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="35" id="MKq-Et-TRx"/>
+                <constraint firstItem="Qxt-wL-Gs4" firstAttribute="top" secondItem="A3S-PA-NtX" secondAttribute="bottom" constant="12" id="Z6S-Vs-vOQ"/>
+                <constraint firstItem="Qxt-wL-Gs4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cW1-Zf-CA4"/>
+                <constraint firstItem="zNF-JN-txD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gPA-Qm-i7e"/>
+                <constraint firstItem="A3S-PA-NtX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="k2R-yS-aK5"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
