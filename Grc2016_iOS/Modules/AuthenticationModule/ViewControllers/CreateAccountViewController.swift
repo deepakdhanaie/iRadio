@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DrawerController
 
 class CreateAccountViewController: UIViewController {
 
@@ -32,6 +33,78 @@ class CreateAccountViewController: UIViewController {
     }
     
     @IBAction func omitirButtonTapped(sender: AnyObject) {
+        self.configureTabBarController()
+    }
+    
+    func configureTabBarController() {
+        let tabBarController = UITabBarController()
+        
+        let radioViewController = RadioViewController(nibName: "RadioViewController", bundle: nil)
+        
+        let radioNavigationViewController = UINavigationController(rootViewController: radioViewController)
+        
+        
+        let onDemandViewController = OnDemandViewController(nibName: "OnDemandViewController", bundle: nil)
+        
+        let onDemandNavigationViewController = UINavigationController(rootViewController: onDemandViewController)
+        
+        
+        let enterateViewController = EnterateViewController(nibName: "EnterateViewController", bundle: nil)
+        let enterateNavigationViewController = UINavigationController(rootViewController: enterateViewController)
+        
+        
+        let destertadorViewController = DestertadorViewController(nibName: "DestertadorViewController", bundle: nil)
+        let destertadorNavigationViewController = UINavigationController(rootViewController: destertadorViewController)
+        
+        
+        let ajusteViewController = AjusteViewController(nibName: "AjusteViewController", bundle: nil)
+        let adusterNavigationViewController = UINavigationController(rootViewController: ajusteViewController)
+        
+        
+        let controllers = [radioNavigationViewController,onDemandNavigationViewController,enterateNavigationViewController,destertadorNavigationViewController,adusterNavigationViewController]
+        tabBarController.viewControllers = controllers
+        
+        let radioTabBarIconImage = UIImage(named: "RadioTabBarIcon")
+        let onDemandTabBarIconImage = UIImage(named: "OnDemandTabBarIcon")
+        let enterateTabBarIconImage = UIImage(named: "EnterateTabBarIcon")
+        let destertadorTabBarIconImage = UIImage(named: "DestertadorTabBarIcon")
+        let ajusteTabBarIconImage = UIImage(named: "AdjustTabBarIcon")
+        
+        
+        radioViewController.tabBarItem = UITabBarItem(
+            title: "",
+            image: radioTabBarIconImage,
+            tag: 1)
+        onDemandViewController.tabBarItem = UITabBarItem(
+            title: "",
+            image: onDemandTabBarIconImage,
+            tag:2)
+        enterateViewController.tabBarItem = UITabBarItem(
+            title: "",
+            image: enterateTabBarIconImage,
+            tag:2)
+        destertadorViewController.tabBarItem = UITabBarItem(
+            title: "",
+            image: destertadorTabBarIconImage,
+            tag:2)
+        ajusteViewController.tabBarItem = UITabBarItem(
+            title: "",
+            image: ajusteTabBarIconImage,
+            tag:2)
+        
+        
+        let menuViewController = MenuViewController(nibName: "MenuViewController", bundle: nil)
+        let menuNavigationViewController = UINavigationController(rootViewController: menuViewController)
+        
+        let drawerCon = DrawerController(centerViewController: tabBarController, leftDrawerViewController: menuNavigationViewController)
+        
+        drawerCon.openDrawerGestureModeMask = OpenDrawerGestureMode.BezelPanningCenterView
+        drawerCon.closeDrawerGestureModeMask = CloseDrawerGestureMode.PanningCenterView
+        
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        appDelegate.window?.rootViewController = drawerCon
     }
 
 }
