@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DDF7DB71D8FC9FE00683220 /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDF7DB61D8FC9FE00683220 /* Favourite.swift */; };
+		1DDF7DB81D8FC9FE00683220 /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDF7DB61D8FC9FE00683220 /* Favourite.swift */; };
+		1DDF7DBB1D8FCEF500683220 /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDF7DB91D8FCEF500683220 /* FavouriteTableViewCell.swift */; };
+		1DDF7DBC1D8FCEF500683220 /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDF7DB91D8FCEF500683220 /* FavouriteTableViewCell.swift */; };
+		1DDF7DBD1D8FCEF500683220 /* FavouriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDF7DBA1D8FCEF500683220 /* FavouriteTableViewCell.xib */; };
+		1DDF7DBE1D8FCEF500683220 /* FavouriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDF7DBA1D8FCEF500683220 /* FavouriteTableViewCell.xib */; };
+		1DDF7DC41D8FD40E00683220 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDF7DC31D8FD40E00683220 /* HeaderView.swift */; };
+		1DDF7DC51D8FD40E00683220 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDF7DC31D8FD40E00683220 /* HeaderView.swift */; };
+		1DDF7DC71D8FD42000683220 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDF7DC61D8FD42000683220 /* HeaderView.xib */; };
+		1DDF7DC81D8FD42000683220 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDF7DC61D8FD42000683220 /* HeaderView.xib */; };
 		1DE8DD021D84B3A9002C37C8 /* RATabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8DD011D84B3A8002C37C8 /* RATabBar.swift */; };
 		1DE8DD031D84B3A9002C37C8 /* RATabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8DD011D84B3A8002C37C8 /* RATabBar.swift */; };
 		1DE8DD041D84B3A9002C37C8 /* RATabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8DD011D84B3A8002C37C8 /* RATabBar.swift */; };
@@ -66,6 +76,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DDF7DB61D8FC9FE00683220 /* Favourite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favourite.swift; sourceTree = "<group>"; };
+		1DDF7DB91D8FCEF500683220 /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
+		1DDF7DBA1D8FCEF500683220 /* FavouriteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavouriteTableViewCell.xib; sourceTree = "<group>"; };
+		1DDF7DC31D8FD40E00683220 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		1DDF7DC61D8FD42000683220 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		1DE8DD011D84B3A8002C37C8 /* RATabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RATabBar.swift; sourceTree = "<group>"; };
 		4A3269131D8FC31C00A1468C /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = Grc2016_iOS/Modules/MenuModule/ViewControllers/Utility.swift; sourceTree = SOURCE_ROOT; };
 		4A33B0551D82B64D00CC29B0 /* Grc2016_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grc2016_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +151,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DDF78E91D8FC68E00683220 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1DDF7DB91D8FCEF500683220 /* FavouriteTableViewCell.swift */,
+				1DDF7DBA1D8FCEF500683220 /* FavouriteTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		1DDF7DB51D8FC9E700683220 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1DDF7DB61D8FC9FE00683220 /* Favourite.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1DDF7DBF1D8FD3B700683220 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				1DDF7DC31D8FD40E00683220 /* HeaderView.swift */,
+				1DDF7DC61D8FD42000683220 /* HeaderView.xib */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		1DE8DD001D84B33E002C37C8 /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,10 +265,15 @@
 		4A33B0881D82B78400CC29B0 /* RadioModule */ = {
 			isa = PBXGroup;
 			children = (
+
 				4ACB4E2E1D91199300051C23 /* ReusableCollectionView */,
+
+				1DDF7DBF1D8FD3B700683220 /* CustomViews */,
+				1DDF7DB51D8FC9E700683220 /* Models */,
+				1DDF78E91D8FC68E00683220 /* TableViewCells */,
+
 				4ACB4E291D910F4100051C23 /* CollectionViewCells */,
 				4A7283811D8FFE6200D39DFD /* PageViewController */,
-				4AE986D51D893702009345BB /* Models */,
 				4AE986D61D893702009345BB /* ViewControllers */,
 			);
 			path = RadioModule;
@@ -343,6 +389,7 @@
 			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
+
 		4ACB4E2E1D91199300051C23 /* ReusableCollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -361,6 +408,7 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+
 		4AE986D61D893702009345BB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -555,8 +603,11 @@
 				4ACB4E2D1D910F6E00051C23 /* GeneroCollectionViewCell.xib in Resources */,
 				4AE986E61D893894009345BB /* OnDemandViewController.xib in Resources */,
 				4ACB4E321D9119C000051C23 /* GeneroReusableCollectionView.xib in Resources */,
-				4AE986F21D8938E1009345BB /* AjusteViewController.xib in Resources */,
+				4AE986F21D8938E1009345BB /* AjusteViewController.xib in
 				4ACB4E361D91302A00051C23 /* GeneroCollectionViewTopHeaderView.xib in Resources */,
+
+				1DDF7DC71D8FD42000683220 /* HeaderView.xib in Resources */,
+
 				4AE986EA1D8938AA009345BB /* EnterateViewController.xib in Resources */,
 				4A7283851D8FFE9300D39DFD /* RadioPageViewController.xib in Resources */,
 				4A7283891D9009A200D39DFD /* RadioGeneroViewController.xib in Resources */,
@@ -568,6 +619,7 @@
 				4A72838D1D9009BD00D39DFD /* RadioProgramsViewController.xib in Resources */,
 				4A7283911D9009E100D39DFD /* RadioFavoriteViewController.xib in Resources */,
 				4AE986E21D89383E009345BB /* RadioViewController.xib in Resources */,
+				1DDF7DBD1D8FCEF500683220 /* FavouriteTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +627,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DDF7DBE1D8FCEF500683220 /* FavouriteTableViewCell.xib in Resources */,
+				1DDF7DC81D8FD42000683220 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,10 +646,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DDF7DB71D8FC9FE00683220 /* Favourite.swift in Sources */,
 				4AE986E51D893894009345BB /* OnDemandViewController.swift in Sources */,
 				4ACB4E311D9119C000051C23 /* GeneroReusableCollectionView.swift in Sources */,
 				4ACB4E351D91302A00051C23 /* GeneroCollectionViewTopHeaderView.swift in Sources */,
 				4A52D9D01D8960A8005C3C32 /* MenuViewController.swift in Sources */,
+				1DDF7DBB1D8FCEF500683220 /* FavouriteTableViewCell.swift in Sources */,
 				4AE986E91D8938AA009345BB /* EnterateViewController.swift in Sources */,
 				4A72838C1D9009BD00D39DFD /* RadioProgramsViewController.swift in Sources */,
 				4A3269141D8FC31C00A1468C /* Utility.swift in Sources */,
@@ -607,6 +663,7 @@
 				4AE986E11D89383E009345BB /* RadioViewController.swift in Sources */,
 				4A7283901D9009E100D39DFD /* RadioFavoriteViewController.swift in Sources */,
 				4A33B08E1D82B83100CC29B0 /* CreateAccountViewController.swift in Sources */,
+				1DDF7DC41D8FD40E00683220 /* HeaderView.swift in Sources */,
 				4A7283881D9009A200D39DFD /* RadioGeneroViewController.swift in Sources */,
 				4A33B0591D82B64D00CC29B0 /* AppDelegate.swift in Sources */,
 				4A7283941D9009F900D39DFD /* RadioCloudViewController.swift in Sources */,
@@ -618,8 +675,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DDF7DC51D8FD40E00683220 /* HeaderView.swift in Sources */,
 				1DE8DD031D84B3A9002C37C8 /* RATabBar.swift in Sources */,
 				4A33B06E1D82B64D00CC29B0 /* Grc2016_iOSTests.swift in Sources */,
+				1DDF7DB81D8FC9FE00683220 /* Favourite.swift in Sources */,
+				1DDF7DBC1D8FCEF500683220 /* FavouriteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,6 +798,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Grc2016_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.intelligrape.Grc2016-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -749,6 +810,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Grc2016_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.intelligrape.Grc2016-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
