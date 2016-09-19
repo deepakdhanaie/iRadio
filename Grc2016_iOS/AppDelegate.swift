@@ -22,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window?.rootViewController = createAccountViewController
             window?.makeKeyAndVisible()
         
+        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
+
+        
         //self.configureNavigationBarAppearance()
             return true
     }

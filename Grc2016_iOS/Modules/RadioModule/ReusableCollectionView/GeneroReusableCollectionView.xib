@@ -8,10 +8,26 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GeneroReusableCollectionView" id="U6b-Vx-4bR" customClass="GeneroReusableCollectionView" customModule="Grc2016_iOS" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+            <rect key="frame" x="0.0" y="0.0" width="314" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
-            <color key="backgroundColor" red="0.87843137250000003" green="0.1960784314" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
-            <point key="canvasLocation" x="121" y="156"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pop en Ingles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3y6-XK-7bg">
+                    <rect key="frame" x="8" y="11" width="224" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Exj-ed-8Up"/>
+                        <constraint firstAttribute="width" constant="224" id="aIv-hg-bQI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3y6-XK-7bg" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="Ums-qX-y5r"/>
+                <constraint firstItem="3y6-XK-7bg" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="fAU-9P-sJS"/>
+            </constraints>
+            <point key="canvasLocation" x="234" y="115"/>
         </collectionReusableView>
     </objects>
 </document>
