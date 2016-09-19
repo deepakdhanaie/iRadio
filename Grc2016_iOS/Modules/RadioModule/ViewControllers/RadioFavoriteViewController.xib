@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RadioFavoriteViewController" customModule="Grc2016_iOS" customModuleProvider="target">
             <connections>
-                <outlet property="recipeDetailTableView" destination="rHL-16-CFb" id="z3K-Aa-OgY"/>
+                <outlet property="recipeDetailTableView" destination="rHL-16-CFb" id="yHw-6n-eUN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

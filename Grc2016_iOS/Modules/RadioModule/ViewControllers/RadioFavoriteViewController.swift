@@ -13,9 +13,9 @@ class RadioFavoriteViewController: UIViewController {
     // MARK: Outlet properties
     @IBOutlet weak var recipeDetailTableView: UITableView?
     
-    let headerView : HeaderView?
+    var headerView : HeaderView?
     
-    let favouriteArray = [Favourite]
+    let favouriteArray = [Favourite]()
     
     
     
@@ -37,14 +37,14 @@ class RadioFavoriteViewController: UIViewController {
 
     
     func registerHeaderView(){
-        
+    
         let nib:NSArray=NSBundle.mainBundle().loadNibNamed("HeaderView", owner: self, options: nil)
         
-        recipeHeaderView = nib.objectAtIndex(0) as? HeaderView
+        headerView = nib.objectAtIndex(0) as? HeaderView
         
-        let frame : CGRect = CGRectMake(0,0,self.view.frame.size,300)
+        let frame : CGRect = CGRectMake(0,0,self.view.frame.size.width,200)
         
-        recipeHeaderView!.frame = frame
+        headerView!.frame = frame
     }
     
     
@@ -58,28 +58,25 @@ class RadioFavoriteViewController: UIViewController {
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return favouriteArray.count
+        return 10// favouriteArray.count
     }
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("FavouriteTableViewCell") as! FavouriteTableViewCell
-        
-        if cell == nil {
-            //tableView.registerNib(UINib(nibName: "UICustomTableViewCell", bundle: nil), forCellReuseIdentifier: "UICustomTableViewCell")
-            tableView.registerClass(FavouriteTableViewCell.classForCoder(), forCellReuseIdentifier: kCellIdentifier)
-            
-            cell = FavouriteTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: kCellIdentifier)
-        }
+        var favouriteTableViewCell = tableView.dequeueReusableCellWithIdentifier("FavouriteTableViewCell") as? FavouriteTableViewCell
 
-    
-        let favouritres = favouriteArray[indexPath.row] as! Favourite
+        if(favouriteTableViewCell == nil){
+            let nib:NSArray=NSBundle.mainBundle().loadNibNamed("FavouriteTableViewCell", owner: self, options: nil)
+            
+            favouriteTableViewCell = nib.objectAtIndex(0) as? FavouriteTableViewCell
         
-        cell.configureCell(favouritres)
+            
+        }
+            favouriteTableViewCell?.configureCell(nil)
         
         
-        return cell
+        return favouriteTableViewCell!
     }
     
     
@@ -96,15 +93,41 @@ class RadioFavoriteViewController: UIViewController {
     
     func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat{
         
-        return 50
+        return 80
     }
+    
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        
+        let tempView = UIView(frame: CGRectMake(0, 0, self.view.frame.size.width, 25))
+        
+        tempView.backgroundColor = UIColor.whiteColor()
+        
+        let titlelabel = UILabel(frame: CGRectMake(20, 5,200, 21))
+        
+        titlelabel.textColor = UIColor(red:38.0/255.0, green:47.0/255.0, blue:64.0/255.0, alpha: 1.0)
+        
+        titlelabel.font = UIFont.boldSystemFontOfSize(18)
+        
+        titlelabel.text = "Radio"
+        
+        tempView.addSubview(titlelabel)
+        
+        
+    
+        return tempView
+    }
+    
+    
+
+    
+    
     
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
         
-        let favouritres = favouriteArray[indexPath.row] as! Favourite
-        
-        
+        //_ = favouriteArray[indexPath.row]
+    
        // self.navigationController?.pushViewController(listViewController!, animated: true)
         
         

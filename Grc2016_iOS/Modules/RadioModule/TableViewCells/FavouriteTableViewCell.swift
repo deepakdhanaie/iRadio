@@ -18,6 +18,7 @@ class FavouriteTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+       // ablumImageView?.clipsToBounds = true
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
@@ -26,12 +27,11 @@ class FavouriteTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configureCell(favurite : Favourite){
-        ablumImageView
-        singerNameLabel?.text = favurite.singerName
-        ablumNameLabel?.text = favurite.albumName
+    func configureCell(favurite : Favourite?){
+        singerNameLabel?.text = "Bryan Adams"
+        ablumNameLabel?.text = "Cloud No 9."
         
         
     }
     
-}
+    }

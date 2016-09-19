@@ -50,6 +50,7 @@
 		4ACB4E3A1D914A7A00051C23 /* RadioCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB4E381D914A7A00051C23 /* RadioCollectionViewCell.xib */; };
 		4ACB4E3D1D91662300051C23 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACB4E3B1D91662300051C23 /* SearchViewController.swift */; };
 		4ACB4E3E1D91662300051C23 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB4E3C1D91662300051C23 /* SearchViewController.xib */; };
+
 		4AE986E11D89383E009345BB /* RadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE986DF1D89383E009345BB /* RadioViewController.swift */; };
 		4AE986E21D89383E009345BB /* RadioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE986E01D89383E009345BB /* RadioViewController.xib */; };
 		4AE986E51D893894009345BB /* OnDemandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE986E31D893894009345BB /* OnDemandViewController.swift */; };
