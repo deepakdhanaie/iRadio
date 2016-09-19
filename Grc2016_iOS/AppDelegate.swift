@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let createAccountViewController = CreateAccountViewController(nibName:"CreateAccountViewController", bundle:nil)
             window?.rootViewController = createAccountViewController
             window?.makeKeyAndVisible()
+        
+        //self.configureNavigationBarAppearance()
             return true
     }
 
@@ -44,6 +46,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func configureNavigationBarAppearance() {
+        let attributes = [
+            NSForegroundColorAttributeName: UIColor.whiteColor(),
+            NSFontAttributeName: UIFont(name:"Helvetica Neue", size:CGFloat(15))!
+        ]
+        UINavigationBar.appearance().titleTextAttributes = attributes
+        
+        UINavigationBar.appearance().barTintColor = UIColor.whiteColor()
+
     }
 
 
