@@ -36,6 +36,8 @@
 		4ACB4E321D9119C000051C23 /* GeneroReusableCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB4E301D9119C000051C23 /* GeneroReusableCollectionView.xib */; };
 		4ACB4E351D91302A00051C23 /* GeneroCollectionViewTopHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACB4E331D91302A00051C23 /* GeneroCollectionViewTopHeaderView.swift */; };
 		4ACB4E361D91302A00051C23 /* GeneroCollectionViewTopHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB4E341D91302A00051C23 /* GeneroCollectionViewTopHeaderView.xib */; };
+		4ACB4E391D914A7A00051C23 /* RadioCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACB4E371D914A7A00051C23 /* RadioCollectionViewCell.swift */; };
+		4ACB4E3A1D914A7A00051C23 /* RadioCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB4E381D914A7A00051C23 /* RadioCollectionViewCell.xib */; };
 		4AE986E11D89383E009345BB /* RadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE986DF1D89383E009345BB /* RadioViewController.swift */; };
 		4AE986E21D89383E009345BB /* RadioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE986E01D89383E009345BB /* RadioViewController.xib */; };
 		4AE986E51D893894009345BB /* OnDemandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE986E31D893894009345BB /* OnDemandViewController.swift */; };
@@ -99,6 +101,8 @@
 		4ACB4E301D9119C000051C23 /* GeneroReusableCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeneroReusableCollectionView.xib; sourceTree = "<group>"; };
 		4ACB4E331D91302A00051C23 /* GeneroCollectionViewTopHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneroCollectionViewTopHeaderView.swift; sourceTree = "<group>"; };
 		4ACB4E341D91302A00051C23 /* GeneroCollectionViewTopHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeneroCollectionViewTopHeaderView.xib; sourceTree = "<group>"; };
+		4ACB4E371D914A7A00051C23 /* RadioCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioCollectionViewCell.swift; sourceTree = "<group>"; };
+		4ACB4E381D914A7A00051C23 /* RadioCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioCollectionViewCell.xib; sourceTree = "<group>"; };
 		4AE986DF1D89383E009345BB /* RadioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioViewController.swift; sourceTree = "<group>"; };
 		4AE986E01D89383E009345BB /* RadioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioViewController.xib; sourceTree = "<group>"; };
 		4AE986E31D893894009345BB /* OnDemandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnDemandViewController.swift; sourceTree = "<group>"; };
@@ -339,6 +343,8 @@
 			children = (
 				4ACB4E2A1D910F6E00051C23 /* GeneroCollectionViewCell.swift */,
 				4ACB4E2B1D910F6E00051C23 /* GeneroCollectionViewCell.xib */,
+				4ACB4E371D914A7A00051C23 /* RadioCollectionViewCell.swift */,
+				4ACB4E381D914A7A00051C23 /* RadioCollectionViewCell.xib */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -560,6 +566,7 @@
 				4AE986EA1D8938AA009345BB /* EnterateViewController.xib in Resources */,
 				4A7283851D8FFE9300D39DFD /* RadioPageViewController.xib in Resources */,
 				4A7283891D9009A200D39DFD /* RadioGeneroViewController.xib in Resources */,
+				4ACB4E3A1D914A7A00051C23 /* RadioCollectionViewCell.xib in Resources */,
 				4A52D9D11D8960A8005C3C32 /* MenuViewController.xib in Resources */,
 				4AE986EE1D8938C2009345BB /* DestertadorViewController.xib in Resources */,
 				4A33B08F1D82B83100CC29B0 /* CreateAccountViewController.xib in Resources */,
@@ -598,6 +605,7 @@
 				4A52D9D01D8960A8005C3C32 /* MenuViewController.swift in Sources */,
 				4AE986E91D8938AA009345BB /* EnterateViewController.swift in Sources */,
 				4A72838C1D9009BD00D39DFD /* RadioProgramsViewController.swift in Sources */,
+				4ACB4E391D914A7A00051C23 /* RadioCollectionViewCell.swift in Sources */,
 				4A3269141D8FC31C00A1468C /* Utility.swift in Sources */,
 				4ACB4E2C1D910F6E00051C23 /* GeneroCollectionViewCell.swift in Sources */,
 				4AE986F11D8938E1009345BB /* AjusteViewController.swift in Sources */,

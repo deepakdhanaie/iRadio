@@ -10,8 +10,13 @@ import UIKit
 
 class RadioViewController: UIViewController,UIPageViewControllerDataSource {
 
+    
+    @IBOutlet weak var collectionView: UICollectionView!
     var controllersArray: Array<UIViewController>?
     var radioPageViewController:UIPageViewController?
+    var optionArray = ["Genero","Favorite","Ciudad","Programas"]
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,11 +44,14 @@ class RadioViewController: UIViewController,UIPageViewControllerDataSource {
         controllersArray?.append(radioCloudeViewController)
         
         radioPageViewController!.setViewControllers([controllersArray![0]] , direction: .Forward, animated: false, completion: nil)
-        radioPageViewController!.view.frame = CGRectMake(0, 0, view.frame.size.width, view.frame.size.height);
+        radioPageViewController!.view.frame = CGRectMake(0, 64, view.frame.size.width, view.frame.size.height);
         
         addChildViewController(radioPageViewController!)
         view.addSubview(radioPageViewController!.view)
         radioPageViewController!.didMoveToParentViewController(self)
+        
+        self.navigationController?.navigationBar.hidden = true
+        self.registerCellNib()
         
         
     }
@@ -53,11 +61,14 @@ class RadioViewController: UIViewController,UIPageViewControllerDataSource {
         // Dispose of any resources that can be recreated.
     }
     
+    private func registerCellNib() {
+        
+        collectionView.registerNib(UINib(nibName: "RadioCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "RadioCollectionViewCell")
+    }
+    
     func configureLeftNavBarButton() {
         let leftMenuButton = UIBarButtonItem(image: UIImage(named: "MenuIcon"), style: UIBarButtonItemStyle.Done, target: self, action: #selector(RadioViewController.leftDrawerButtonPress(_:)))
         self.navigationItem.leftBarButtonItem = leftMenuButton
-        
-        //self.navigationController?.navigationItem.appearance().barTintColor = UIColor.whiteColor()
         
         UINavigationBar.appearance().barTintColor = UIColor.whiteColor()
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
@@ -72,7 +83,7 @@ class RadioViewController: UIViewController,UIPageViewControllerDataSource {
     
     func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int
     {
-        return 4
+        return optionArray.count
     }
     
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int
@@ -100,5 +111,29 @@ class RadioViewController: UIViewController,UIPageViewControllerDataSource {
         
         return controllersArray![index! + 1]
     }
+}
+    extension RadioViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+        
+        func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+            return 1
+        }
+        
+        func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+            return 4
+        }
+        
+        func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("RadioCollectionViewCell", forIndexPath: indexPath) as! RadioCollectionViewCell
+            
+            cell.optionLabel.text = optionArray[indexPath.row]
+            
+            return cell
+        }
+        
+        func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
+        {
+            return CGSizeMake(self.view.frame.width/4 - 10,50)
+            
+        }
     
 }

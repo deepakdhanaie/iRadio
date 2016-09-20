@@ -55,7 +55,7 @@ extension RadioGeneroViewController: UICollectionViewDelegate, UICollectionViewD
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return 5
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -70,7 +70,7 @@ extension RadioGeneroViewController: UICollectionViewDelegate, UICollectionViewD
             return CGSizeMake(0,0)
         }
         
-        return CGSizeMake(150,150)
+        return CGSizeMake(self.view.frame.width * 0.30,150)
 
     }
     
@@ -87,7 +87,6 @@ extension RadioGeneroViewController: UICollectionViewDelegate, UICollectionViewD
                 if(topHeaderView != nil){
                     topHeaderView?.applyTheme()
                     
-                    //print(topHeaderView!.radioLabel.text)
                 }
                 
                 return topHeaderView!
@@ -95,7 +94,6 @@ extension RadioGeneroViewController: UICollectionViewDelegate, UICollectionViewD
                 headerView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader,
                                                                                    withReuseIdentifier:"GeneroReusableCollectionView", forIndexPath: indexPath) as?  GeneroReusableCollectionView
                 
-                headerView?.backgroundColor = UIColor.redColor()
                 return headerView!
             }
             
@@ -111,14 +109,19 @@ extension RadioGeneroViewController: UICollectionViewDelegate, UICollectionViewD
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         let size : CGSize
         if section == 0 {
-            size = CGSize(width: 400, height: 300)
+            size = CGSize(width: 400, height: 265)
 
         } else {
-            size = CGSize(width: 400, height: 50)
+            size = CGSize(width: 400, height: 35)
 
         }
         
         return size
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+        
+        return UIEdgeInsetsMake(5, 2, 2, 5)
     }
     
     
