@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import DrawerController
 
 class CreateAccountViewController: UIViewController {
 
@@ -96,15 +95,15 @@ class CreateAccountViewController: UIViewController {
         let menuViewController = MenuViewController(nibName: "MenuViewController", bundle: nil)
         let menuNavigationViewController = UINavigationController(rootViewController: menuViewController)
         
-        let drawerCon = DrawerController(centerViewController: tabBarController, leftDrawerViewController: menuNavigationViewController)
-        
-        drawerCon.openDrawerGestureModeMask = OpenDrawerGestureMode.BezelPanningCenterView
-        drawerCon.closeDrawerGestureModeMask = CloseDrawerGestureMode.PanningCenterView
+//        let drawerCon = DrawerController(centerViewController: tabBarController, leftDrawerViewController: menuNavigationViewController)
+//        
+//        drawerCon.openDrawerGestureModeMask = OpenDrawerGestureMode.BezelPanningCenterView
+//        drawerCon.closeDrawerGestureModeMask = CloseDrawerGestureMode.PanningCenterView
         
         
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
-        appDelegate.window?.rootViewController = drawerCon
+        appDelegate.window?.rootViewController = tabBarController
     }
 
 }

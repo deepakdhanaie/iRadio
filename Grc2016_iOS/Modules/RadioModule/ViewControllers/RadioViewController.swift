@@ -67,7 +67,7 @@ class RadioViewController: UIViewController,UIPageViewControllerDataSource {
     }
     
     func leftDrawerButtonPress(sender: AnyObject) {
-        self.evo_drawerController?.toggleLeftDrawerSideAnimated(true, completion: nil)
+        //self.evo_drawerController?.toggleLeftDrawerSideAnimated(true, completion: nil)
     }
     
     func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int
