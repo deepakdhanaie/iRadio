@@ -31,6 +31,8 @@
 		4A7283911D9009E100D39DFD /* RadioFavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A72838F1D9009E100D39DFD /* RadioFavoriteViewController.xib */; };
 		4A7283941D9009F900D39DFD /* RadioCloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7283921D9009F900D39DFD /* RadioCloudViewController.swift */; };
 		4A7283951D9009F900D39DFD /* RadioCloudViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A7283931D9009F900D39DFD /* RadioCloudViewController.xib */; };
+		4ACB4E2C1D910F6E00051C23 /* GeneroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACB4E2A1D910F6E00051C23 /* GeneroCollectionViewCell.swift */; };
+		4ACB4E2D1D910F6E00051C23 /* GeneroCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB4E2B1D910F6E00051C23 /* GeneroCollectionViewCell.xib */; };
 		4AE986E11D89383E009345BB /* RadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE986DF1D89383E009345BB /* RadioViewController.swift */; };
 		4AE986E21D89383E009345BB /* RadioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE986E01D89383E009345BB /* RadioViewController.xib */; };
 		4AE986E51D893894009345BB /* OnDemandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE986E31D893894009345BB /* OnDemandViewController.swift */; };
@@ -88,6 +90,8 @@
 		4A72838F1D9009E100D39DFD /* RadioFavoriteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioFavoriteViewController.xib; sourceTree = "<group>"; };
 		4A7283921D9009F900D39DFD /* RadioCloudViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioCloudViewController.swift; sourceTree = "<group>"; };
 		4A7283931D9009F900D39DFD /* RadioCloudViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioCloudViewController.xib; sourceTree = "<group>"; };
+		4ACB4E2A1D910F6E00051C23 /* GeneroCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneroCollectionViewCell.swift; sourceTree = "<group>"; };
+		4ACB4E2B1D910F6E00051C23 /* GeneroCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeneroCollectionViewCell.xib; sourceTree = "<group>"; };
 		4AE986DF1D89383E009345BB /* RadioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioViewController.swift; sourceTree = "<group>"; };
 		4AE986E01D89383E009345BB /* RadioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioViewController.xib; sourceTree = "<group>"; };
 		4AE986E31D893894009345BB /* OnDemandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnDemandViewController.swift; sourceTree = "<group>"; };
@@ -218,6 +222,7 @@
 		4A33B0881D82B78400CC29B0 /* RadioModule */ = {
 			isa = PBXGroup;
 			children = (
+				4ACB4E291D910F4100051C23 /* CollectionViewCells */,
 				4A7283811D8FFE6200D39DFD /* PageViewController */,
 				4AE986D51D893702009345BB /* Models */,
 				4AE986D61D893702009345BB /* ViewControllers */,
@@ -324,6 +329,15 @@
 				4A7283831D8FFE9300D39DFD /* RadioPageViewController.xib */,
 			);
 			path = PageViewController;
+			sourceTree = "<group>";
+		};
+		4ACB4E291D910F4100051C23 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				4ACB4E2A1D910F6E00051C23 /* GeneroCollectionViewCell.swift */,
+				4ACB4E2B1D910F6E00051C23 /* GeneroCollectionViewCell.xib */,
+			);
+			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 		4AE986D51D893702009345BB /* Models */ = {
@@ -537,6 +551,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ACB4E2D1D910F6E00051C23 /* GeneroCollectionViewCell.xib in Resources */,
 				4AE986E61D893894009345BB /* OnDemandViewController.xib in Resources */,
 				4AE986F21D8938E1009345BB /* AjusteViewController.xib in Resources */,
 				4AE986EA1D8938AA009345BB /* EnterateViewController.xib in Resources */,
@@ -627,6 +642,7 @@
 				4AE986E91D8938AA009345BB /* EnterateViewController.swift in Sources */,
 				4A72838C1D9009BD00D39DFD /* RadioProgramsViewController.swift in Sources */,
 				4A3269141D8FC31C00A1468C /* Utility.swift in Sources */,
+				4ACB4E2C1D910F6E00051C23 /* GeneroCollectionViewCell.swift in Sources */,
 				4AE986F11D8938E1009345BB /* AjusteViewController.swift in Sources */,
 				4AE986ED1D8938C2009345BB /* DestertadorViewController.swift in Sources */,
 				1DE8DD021D84B3A9002C37C8 /* RATabBar.swift in Sources */,
