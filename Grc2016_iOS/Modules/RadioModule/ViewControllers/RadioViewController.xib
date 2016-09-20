@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="wmd-Zp-dYp">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="101"/>
+                    <rect key="frame" x="8" y="0.0" width="584" height="101"/>
                     <color key="backgroundColor" red="0.87843137250000003" green="0.1960784314" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="101" id="VSl-EZ-oZk"/>
@@ -34,11 +34,11 @@
                     </connections>
                 </collectionView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.87843137250000003" green="0.1960784314" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="wmd-Zp-dYp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6JO-7b-Lu3"/>
+                <constraint firstItem="wmd-Zp-dYp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="6JO-7b-Lu3"/>
                 <constraint firstItem="wmd-Zp-dYp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="X7t-Db-QfL"/>
-                <constraint firstAttribute="trailing" secondItem="wmd-Zp-dYp" secondAttribute="trailing" id="qSw-QU-QwN"/>
+                <constraint firstAttribute="trailing" secondItem="wmd-Zp-dYp" secondAttribute="trailing" constant="8" id="qSw-QU-QwN"/>
             </constraints>
         </view>
     </objects>

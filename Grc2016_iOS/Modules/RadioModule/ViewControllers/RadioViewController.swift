@@ -132,8 +132,26 @@ class RadioViewController: UIViewController,UIPageViewControllerDataSource {
         
         func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
         {
-            return CGSizeMake(self.view.frame.width/4 - 10,50)
+            return CGSizeMake(self.view.frame.width/4 - 18,50)
             
         }
+        
+        func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+            
+            self.scrollToViewController(index: indexPath.row)
+        }
+
+        
+        func scrollToViewController(index newIndex: Int) {
+            if let firstViewController = controllersArray?.first,
+                let currentIndex = controllersArray!.indexOf(firstViewController) {
+                let direction: UIPageViewControllerNavigationDirection = newIndex >= currentIndex ? .Forward : .Reverse
+                let nextViewController = controllersArray![newIndex]
+                //scrollToViewController(nextViewController, direction: direction)
+                
+                 radioPageViewController?.setViewControllers([nextViewController], direction: direction, animated: true, completion: nil)
+            }
+        }
+        
     
 }
