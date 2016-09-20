@@ -11,7 +11,9 @@ import UIKit
 class RadioGeneroViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    var headerView : UICollectionReusableView?
+    var headerView : GeneroReusableCollectionView?
+    var topHeaderView : GeneroCollectionViewTopHeaderView?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +34,17 @@ class RadioGeneroViewController: UIViewController {
         
         collectionView?.registerClass(GeneroReusableCollectionView.self,forSupplementaryViewOfKind: UICollectionElementKindSectionHeader,
                                       withReuseIdentifier: "GeneroReusableCollectionView")
+        
+        collectionView?.registerClass(GeneroCollectionViewTopHeaderView.self,forSupplementaryViewOfKind: UICollectionElementKindSectionHeader,
+                                      withReuseIdentifier: "GeneroCollectionViewTopHeaderView")
+        
+        
+        collectionView.registerNib(UINib(nibName: "GeneroReusableCollectionView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "GeneroReusableCollectionView")
+        
+         collectionView.registerNib(UINib(nibName: "GeneroCollectionViewTopHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "GeneroCollectionViewTopHeaderView")
+    
+        
+        
     }
 }
 
@@ -55,7 +68,6 @@ extension RadioGeneroViewController: UICollectionViewDelegate, UICollectionViewD
     {
         if indexPath.section == 0 {
             return CGSizeMake(0,0)
-
         }
         
         return CGSizeMake(150,150)
@@ -68,12 +80,26 @@ extension RadioGeneroViewController: UICollectionViewDelegate, UICollectionViewD
         switch kind {
         case UICollectionElementKindSectionHeader:
             
+            if indexPath.section == 0 {
+                topHeaderView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader,
+                                                                                   withReuseIdentifier:"GeneroCollectionViewTopHeaderView", forIndexPath: indexPath) as?  GeneroCollectionViewTopHeaderView
+                
+                if(topHeaderView != nil){
+                    topHeaderView?.applyTheme()
+                    
+                    //print(topHeaderView!.radioLabel.text)
+                }
+                
+                return topHeaderView!
+            } else {
+                headerView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader,
+                                                                                   withReuseIdentifier:"GeneroReusableCollectionView", forIndexPath: indexPath) as?  GeneroReusableCollectionView
+                
+                headerView?.backgroundColor = UIColor.redColor()
+                return headerView!
+            }
             
-            headerView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader,
-                                                                               withReuseIdentifier:"GeneroReusableCollectionView", forIndexPath: indexPath) as?  GeneroReusableCollectionView
             
-            headerView?.backgroundColor = UIColor.redColor()
-            return headerView!
             
         default:
             return UICollectionReusableView()
