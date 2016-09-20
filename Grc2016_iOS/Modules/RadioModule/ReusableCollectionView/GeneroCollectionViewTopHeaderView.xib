@@ -21,7 +21,7 @@
                         <outlet property="delegate" destination="-1" id="aO0-QI-9X7"/>
                     </connections>
                 </searchBar>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d45-5h-dk4">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerImage" translatesAutoresizingMaskIntoConstraints="NO" id="d45-5h-dk4">
                     <rect key="frame" x="0.0" y="50" width="379" height="172"/>
                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -68,4 +68,7 @@
             <point key="canvasLocation" x="216.5" y="204"/>
         </collectionReusableView>
     </objects>
+    <resources>
+        <image name="headerImage" width="375" height="280"/>
+    </resources>
 </document>

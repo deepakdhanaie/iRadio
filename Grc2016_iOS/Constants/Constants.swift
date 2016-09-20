@@ -34,4 +34,18 @@ struct Constants {
         
     }
 
+
 }
+
+
+
+//***********************************************************************
+// MARK:
+// MARK: - TAGS
+// MARK:
+//***********************************************************************
+
+
+let LIKEBUTTONTAG = 10
+let SHAREBUTTONTAG = 11
+let FAVOURITEBUTTONTAG = 12

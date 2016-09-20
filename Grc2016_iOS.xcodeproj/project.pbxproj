@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D66C1851D8FFDEF00712B75 /* GeneroCollectionViewTopHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB4E341D91302A00051C23 /* GeneroCollectionViewTopHeaderView.xib */; };
 		1DDF7DB71D8FC9FE00683220 /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDF7DB61D8FC9FE00683220 /* Favourite.swift */; };
 		1DDF7DB81D8FC9FE00683220 /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDF7DB61D8FC9FE00683220 /* Favourite.swift */; };
 		1DDF7DBB1D8FCEF500683220 /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDF7DB91D8FCEF500683220 /* FavouriteTableViewCell.swift */; };
@@ -274,13 +275,10 @@
 		4A33B0881D82B78400CC29B0 /* RadioModule */ = {
 			isa = PBXGroup;
 			children = (
-
 				4ACB4E2E1D91199300051C23 /* ReusableCollectionView */,
-
 				1DDF7DBF1D8FD3B700683220 /* CustomViews */,
 				1DDF7DB51D8FC9E700683220 /* Models */,
 				1DDF78E91D8FC68E00683220 /* TableViewCells */,
-
 				4ACB4E291D910F4100051C23 /* CollectionViewCells */,
 				4A7283811D8FFE6200D39DFD /* PageViewController */,
 				4AE986D61D893702009345BB /* ViewControllers */,
@@ -400,7 +398,6 @@
 			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
-
 		4ACB4E2E1D91199300051C23 /* ReusableCollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -412,14 +409,6 @@
 			path = ReusableCollectionView;
 			sourceTree = "<group>";
 		};
-		4AE986D51D893702009345BB /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-
 		4AE986D61D893702009345BB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -613,14 +602,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D66C1851D8FFDEF00712B75 /* GeneroCollectionViewTopHeaderView.xib in Resources */,
 				4ACB4E2D1D910F6E00051C23 /* GeneroCollectionViewCell.xib in Resources */,
 				4AE986E61D893894009345BB /* OnDemandViewController.xib in Resources */,
 				4ACB4E321D9119C000051C23 /* GeneroReusableCollectionView.xib in Resources */,
-				4AE986F21D8938E1009345BB /* AjusteViewController.xib in
-				4ACB4E361D91302A00051C23 /* GeneroCollectionViewTopHeaderView.xib in Resources */,
-
+				4AE986F21D8938E1009345BB /* AjusteViewController.xib in Resources */,
 				1DDF7DC71D8FD42000683220 /* HeaderView.xib in Resources */,
-
 				4AE986EA1D8938AA009345BB /* EnterateViewController.xib in Resources */,
 				4A7283851D8FFE9300D39DFD /* RadioPageViewController.xib in Resources */,
 				4A7283891D9009A200D39DFD /* RadioGeneroViewController.xib in Resources */,
@@ -762,7 +749,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -802,7 +789,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -15,6 +15,27 @@
                     <rect key="frame" x="0.0" y="0.0" width="398" height="200"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svX-Rb-Or7">
+                    <rect key="frame" x="298" y="25" width="47" height="28"/>
+                    <state key="normal" image="like"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Isb-MW-f1T"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMe-2P-QTT">
+                    <rect key="frame" x="352" y="25" width="38" height="28"/>
+                    <state key="normal" image="sharingIcon"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="jBq-oK-aIo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMc-kw-ksQ">
+                    <rect key="frame" x="242" y="23" width="43" height="30"/>
+                    <state key="normal" image="favourite"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="6eo-Vh-hcd"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.96862745100000003" green="0.35294117650000001" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
@@ -25,12 +46,18 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="favouriteButton" destination="nMc-kw-ksQ" id="wJc-7B-8b7"/>
                 <outlet property="headerImageView" destination="RXy-4p-gwM" id="IZD-Zf-suX"/>
+                <outlet property="likeButton" destination="svX-Rb-Or7" id="6Hp-3t-uJE"/>
+                <outlet property="shareButton" destination="HMe-2P-QTT" id="vmU-3z-iFU"/>
             </connections>
             <point key="canvasLocation" x="262" y="518"/>
         </view>
     </objects>
     <resources>
+        <image name="favourite" width="30" height="25"/>
         <image name="headerImage" width="375" height="280"/>
+        <image name="like" width="21" height="18"/>
+        <image name="sharingIcon" width="30" height="25"/>
     </resources>
 </document>

@@ -64,21 +64,13 @@ class RadioViewController: UIViewController,UIPageViewControllerDataSource {
         // Dispose of any resources that can be recreated.
     }
     
+
     private func registerCellNib() {
         
         collectionView.registerNib(UINib(nibName: "RadioCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "RadioCollectionViewCell")
     }
     
-    func configureLeftNavBarButton() {
-        let leftMenuButton = UIBarButtonItem(image: UIImage(named: "MenuIcon"), style: UIBarButtonItemStyle.Done, target: self, action: #selector(RadioViewController.leftDrawerButtonPress(_:)))
-        self.navigationItem.leftBarButtonItem = leftMenuButton
-        
-        UINavigationBar.appearance().barTintColor = UIColor.whiteColor()
-        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
 
-
-
-    }
     
     func leftDrawerButtonPress(sender: AnyObject) {
         //self.evo_drawerController?.toggleLeftDrawerSideAnimated(true, completion: nil)

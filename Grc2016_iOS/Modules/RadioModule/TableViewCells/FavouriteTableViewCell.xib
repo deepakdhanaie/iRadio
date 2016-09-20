@@ -40,12 +40,25 @@
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xkn-UO-Fuh">
+                        <rect key="frame" x="296" y="17" width="12" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="3d4-kN-N5l"/>
+                            <constraint firstAttribute="height" constant="34" id="plC-rO-MOV"/>
+                        </constraints>
+                        <state key="normal" image="ExtroInfo"/>
+                        <connections>
+                            <action selector="reschedule:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gbD-Gt-pbf"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="ybW-AK-qXB" firstAttribute="leading" secondItem="ZiQ-25-RDK" secondAttribute="trailing" constant="11" id="Hmp-a8-H3P"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Xkn-UO-Fuh" secondAttribute="trailing" constant="4" id="NaD-Wr-ACT"/>
                     <constraint firstItem="WUO-8I-wMj" firstAttribute="top" secondItem="ybW-AK-qXB" secondAttribute="bottom" constant="2" id="QAK-0g-7ee"/>
                     <constraint firstItem="ybW-AK-qXB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="Tdp-FL-hRX"/>
                     <constraint firstItem="WUO-8I-wMj" firstAttribute="leading" secondItem="ybW-AK-qXB" secondAttribute="leading" id="ZLl-vI-gpK"/>
+                    <constraint firstItem="Xkn-UO-Fuh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="fDZ-71-vTn"/>
                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ZiQ-25-RDK" secondAttribute="bottom" constant="7" id="mrM-4R-L3v"/>
                     <constraint firstItem="ZiQ-25-RDK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="p41-BX-p8T"/>
                     <constraint firstItem="ZiQ-25-RDK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="pNz-pc-ZjM"/>
@@ -54,12 +67,14 @@
             <connections>
                 <outlet property="ablumImageView" destination="ZiQ-25-RDK" id="ZlL-7W-PWD"/>
                 <outlet property="ablumNameLabel" destination="WUO-8I-wMj" id="CE8-Zo-8Xp"/>
+                <outlet property="extraInfoButton" destination="Xkn-UO-Fuh" id="jyF-Ex-brk"/>
                 <outlet property="singerNameLabel" destination="ybW-AK-qXB" id="JvE-uq-ojg"/>
             </connections>
             <point key="canvasLocation" x="366" y="369"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="ExtroInfo" width="6" height="24"/>
         <image name="RadioIcon" width="55" height="55"/>
     </resources>
 </document>

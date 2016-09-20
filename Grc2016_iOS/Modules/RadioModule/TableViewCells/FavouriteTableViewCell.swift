@@ -8,12 +8,21 @@
 
 import UIKit
 
+protocol FavouriteTableViewCellDelegate{
+    
+    func programToSchedule()
+}
+
 class FavouriteTableViewCell: UITableViewCell {
     
     @IBOutlet weak var ablumImageView : UIImageView?
     @IBOutlet weak var ablumNameLabel : UILabel?
     @IBOutlet weak var singerNameLabel : UILabel?
+    @IBOutlet weak var extraInfoButton : UIButton?
+    
+    var delegate : FavouriteTableViewCellDelegate?
 
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,11 +36,24 @@ class FavouriteTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configureCell(favurite : Favourite?){
+    func configureCell(favurite : Favourite? ,isEditing :Bool){
         singerNameLabel?.text = "Bryan Adams"
         ablumNameLabel?.text = "Cloud No 9."
         
+         extraInfoButton?.hidden = true
+        
+        if(isEditing){
+           extraInfoButton?.hidden = false
+        }
         
     }
     
+    
+    @IBAction func reschedule(sender: AnyObject) {
+        
+        if let delegate = self.delegate {
+            delegate.programToSchedule()
+        }
     }
+    
+}

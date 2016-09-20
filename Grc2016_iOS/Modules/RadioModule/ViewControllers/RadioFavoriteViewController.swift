@@ -8,14 +8,18 @@
 
 import UIKit
 
-class RadioFavoriteViewController: UIViewController {
+class RadioFavoriteViewController: UIViewController,UIActionSheetDelegate {
     
     // MARK: Outlet properties
-    @IBOutlet weak var recipeDetailTableView: UITableView?
+    @IBOutlet weak var favouriteTableView: UITableView?
     
     var headerView : HeaderView?
     
     let favouriteArray = [Favourite]()
+    
+    var editButton : UIButton?
+    
+    var isEditFirst : Bool?
     
     
     
@@ -26,7 +30,10 @@ class RadioFavoriteViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.registerHeaderView()
-        recipeDetailTableView?.tableHeaderView = headerView
+        headerView?.delegate = self
+        headerView?.configureView(true)
+        favouriteTableView?.tableHeaderView = headerView
+        isEditFirst = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -73,7 +80,8 @@ class RadioFavoriteViewController: UIViewController {
         
             
         }
-            favouriteTableViewCell?.configureCell(nil)
+        favouriteTableViewCell?.delegate = self
+        favouriteTableViewCell?.configureCell(nil, isEditing:(favouriteTableView?.editing)!)
         
         
         return favouriteTableViewCell!
@@ -114,13 +122,35 @@ class RadioFavoriteViewController: UIViewController {
         tempView.addSubview(titlelabel)
         
         
+
+        
+        if(isEditFirst == true){
+            editButton = UIButton(frame: CGRectMake(self.view.frame.size.width - (50 + 20), 5,50, 21))
+            editButton!.setTitle("Editor", forState: .Normal)
+            isEditFirst = false
+        }
+     
+        
+        editButton?.titleLabel?.font = UIFont.systemFontOfSize(15)
+        
+        editButton!.setTitleColor(UIColor.lightGrayColor(), forState: .Normal)
+        
+        editButton!.addTarget(self, action: "editSongList", forControlEvents: .TouchUpInside)
+        
+        tempView.addSubview(editButton!)
+        
     
         return tempView
     }
     
     
 
-    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0 {
+            return 30
+        }
+        return tableView.sectionHeaderHeight
+    }
     
     
     
@@ -133,7 +163,89 @@ class RadioFavoriteViewController: UIViewController {
         
     }
     
-
+    
+    
+    func editSongList(){
+        
+        if(self.favouriteTableView?.editing == true){
+            
+            self.favouriteTableView?.setEditing(false, animated: true)
+            
+             editButton!.setTitle("Editor", forState: .Normal)
+            
+        } else {
+            
+            
+            editButton!.setTitle("Done", forState: .Normal)
+            self.favouriteTableView?.setEditing(true, animated: true)
+            
+            
+        }
+        
+        self.favouriteTableView?.reloadSections(NSIndexSet(index: 0), withRowAnimation: .Fade)
+        
+    }
+    
+    //***********************************************************************
+    // MARK:
+    // MARK: - Default sharing related methods
+    // MARK:
+    //***********************************************************************
+    
+    
+    func showActivityController(){
+        
+        let activityViewController = UIActivityViewController(activityItems:[], applicationActivities: nil)
+        // Exclude irrelevant activities
+//        activityViewController.excludedActivityTypes =
+//            [UIActivityTypeAssignToContact, UIActivityTypeSaveToCameraRoll, UIActivityTypePostToFlickr,
+//                UIActivityTypePostToVimeo,UIActivityTypePostToTwitter,UIActivityTypePostToFacebook]
+        
+        self.presentViewController(activityViewController, animated: true, completion: nil)
+        
+    }
+    
+    
+    func showActionSheet(){
+        let actionSheet = UIActionSheet(title: "Choose Option", delegate: self, cancelButtonTitle: "Cancel", destructiveButtonTitle: nil, otherButtonTitles: "Save", "Delete")
+        let tabbar =   self.tabBarController?.tabBar
+        actionSheet.showFromTabBar(tabbar!)
+    }
     
 
+}
+
+
+extension RadioFavoriteViewController : HeaderViewDelegate,FavouriteTableViewCellDelegate{
+    
+       func buttonTapped(buttonIndex: Int){
+        
+        switch (buttonIndex) {
+            
+        case LIKEBUTTONTAG : break
+            
+        case SHAREBUTTONTAG :
+            self.showActivityController()
+              break
+            
+        case FAVOURITEBUTTONTAG :
+            break
+            
+        default:
+            break
+            
+            
+        }
+
+        
+    }
+    
+    
+    func programToSchedule(){
+        
+        self.showActionSheet()
+       
+    }
+    
+    
 }
