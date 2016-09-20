@@ -11,6 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
             <autoresizingMask key="autoresizingMask"/>
             <color key="backgroundColor" red="0.87843137250000003" green="0.1960784314" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+            <point key="canvasLocation" x="121" y="156"/>
         </collectionReusableView>
     </objects>
 </document>

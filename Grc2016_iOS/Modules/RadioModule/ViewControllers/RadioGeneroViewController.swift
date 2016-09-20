@@ -30,15 +30,15 @@ class RadioGeneroViewController: UIViewController {
         
         collectionView.registerNib(UINib(nibName: "GeneroCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "GeneroCollectionViewCell")
         
-        collectionView.registerNib(UINib(nibName: "GeneroReusableCollectionView", bundle: nil), forCellWithReuseIdentifier: "GeneroReusableCollectionView")
-
+        collectionView?.registerClass(GeneroReusableCollectionView.self,forSupplementaryViewOfKind: UICollectionElementKindSectionHeader,
+                                      withReuseIdentifier: "GeneroReusableCollectionView")
     }
 }
 
 extension RadioGeneroViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 2
+        return 3
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -53,38 +53,27 @@ extension RadioGeneroViewController: UICollectionViewDelegate, UICollectionViewD
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
     {
+        if indexPath.section == 0 {
+            return CGSizeMake(0,0)
+
+        }
+        
         return CGSizeMake(150,150)
 
     }
     
-//    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-//        if Helpers.CurrentDevice == .Phone {
-//            return UIEdgeInsetsMake((self.view.frame.width * 0.10)/2, Constants.NumericConstant.ZERO_CONSTANT, Constants.NumericConstant.ZERO_CONSTANT, Constants.NumericConstant.ZERO_CONSTANT)
-//        }
-//        else
-//        {
-//            return UIEdgeInsetsMake((self.view.frame.width * 0.10)/3, self.view.frame.width * 0.035, Constants.NumericConstant.ZERO_CONSTANT, self.view.frame.width * 0.035)
-//        }
-//    }
     
     func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView{
         
         switch kind {
         case UICollectionElementKindSectionHeader:
             
+            
             headerView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader,
                                                                                withReuseIdentifier:"GeneroReusableCollectionView", forIndexPath: indexPath) as?  GeneroReusableCollectionView
-//            headerView?.delegate = self
-//            headerView?.recipeOfDayArray = self.fetchCachedRecipeOfDay()
             
+            headerView?.backgroundColor = UIColor.redColor()
             return headerView!
-            
-//        case UICollectionElementKindSectionFooter:
-//            
-//            recipeFooterView  = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "FOOTERVIEW", forIndexPath: indexPath)
-//            
-//            recipeFooterView?.backgroundColor = UIColor.clearColor();
-//            return recipeFooterView!
             
         default:
             return UICollectionReusableView()
@@ -92,6 +81,21 @@ extension RadioGeneroViewController: UICollectionViewDelegate, UICollectionViewD
         }
         
     }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        let size : CGSize
+        if section == 0 {
+            size = CGSize(width: 400, height: 300)
+
+        } else {
+            size = CGSize(width: 400, height: 50)
+
+        }
+        
+        return size
+    }
+    
+    
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
