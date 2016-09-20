@@ -11,11 +11,13 @@ import UIKit
 class RadioGeneroViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    var headerView : UICollectionReusableView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.registerCellNib()
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,17 +28,17 @@ class RadioGeneroViewController: UIViewController {
 
     private func registerCellNib() {
         
-        collectionView.registerNib(UINib(nibName: "GTVLoadingCell", bundle: nil), forCellWithReuseIdentifier: "")
-    }
-    
-    
+        collectionView.registerNib(UINib(nibName: "GeneroCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "GeneroCollectionViewCell")
+        
+        collectionView.registerNib(UINib(nibName: "GeneroReusableCollectionView", bundle: nil), forCellWithReuseIdentifier: "GeneroReusableCollectionView")
 
+    }
 }
 
 extension RadioGeneroViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 1
+        return 2
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -64,6 +66,32 @@ extension RadioGeneroViewController: UICollectionViewDelegate, UICollectionViewD
 //            return UIEdgeInsetsMake((self.view.frame.width * 0.10)/3, self.view.frame.width * 0.035, Constants.NumericConstant.ZERO_CONSTANT, self.view.frame.width * 0.035)
 //        }
 //    }
+    
+    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView{
+        
+        switch kind {
+        case UICollectionElementKindSectionHeader:
+            
+            headerView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader,
+                                                                               withReuseIdentifier:"GeneroReusableCollectionView", forIndexPath: indexPath) as?  GeneroReusableCollectionView
+//            headerView?.delegate = self
+//            headerView?.recipeOfDayArray = self.fetchCachedRecipeOfDay()
+            
+            return headerView!
+            
+//        case UICollectionElementKindSectionFooter:
+//            
+//            recipeFooterView  = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "FOOTERVIEW", forIndexPath: indexPath)
+//            
+//            recipeFooterView?.backgroundColor = UIColor.clearColor();
+//            return recipeFooterView!
+            
+        default:
+            return UICollectionReusableView()
+            
+        }
+        
+    }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         

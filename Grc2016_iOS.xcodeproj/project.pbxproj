@@ -33,6 +33,8 @@
 		4A7283951D9009F900D39DFD /* RadioCloudViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A7283931D9009F900D39DFD /* RadioCloudViewController.xib */; };
 		4ACB4E2C1D910F6E00051C23 /* GeneroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACB4E2A1D910F6E00051C23 /* GeneroCollectionViewCell.swift */; };
 		4ACB4E2D1D910F6E00051C23 /* GeneroCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB4E2B1D910F6E00051C23 /* GeneroCollectionViewCell.xib */; };
+		4ACB4E311D9119C000051C23 /* GeneroReusableCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACB4E2F1D9119C000051C23 /* GeneroReusableCollectionView.swift */; };
+		4ACB4E321D9119C000051C23 /* GeneroReusableCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB4E301D9119C000051C23 /* GeneroReusableCollectionView.xib */; };
 		4AE986E11D89383E009345BB /* RadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE986DF1D89383E009345BB /* RadioViewController.swift */; };
 		4AE986E21D89383E009345BB /* RadioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE986E01D89383E009345BB /* RadioViewController.xib */; };
 		4AE986E51D893894009345BB /* OnDemandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE986E31D893894009345BB /* OnDemandViewController.swift */; };
@@ -92,6 +94,8 @@
 		4A7283931D9009F900D39DFD /* RadioCloudViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioCloudViewController.xib; sourceTree = "<group>"; };
 		4ACB4E2A1D910F6E00051C23 /* GeneroCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneroCollectionViewCell.swift; sourceTree = "<group>"; };
 		4ACB4E2B1D910F6E00051C23 /* GeneroCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeneroCollectionViewCell.xib; sourceTree = "<group>"; };
+		4ACB4E2F1D9119C000051C23 /* GeneroReusableCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneroReusableCollectionView.swift; sourceTree = "<group>"; };
+		4ACB4E301D9119C000051C23 /* GeneroReusableCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeneroReusableCollectionView.xib; sourceTree = "<group>"; };
 		4AE986DF1D89383E009345BB /* RadioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioViewController.swift; sourceTree = "<group>"; };
 		4AE986E01D89383E009345BB /* RadioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioViewController.xib; sourceTree = "<group>"; };
 		4AE986E31D893894009345BB /* OnDemandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnDemandViewController.swift; sourceTree = "<group>"; };
@@ -222,6 +226,7 @@
 		4A33B0881D82B78400CC29B0 /* RadioModule */ = {
 			isa = PBXGroup;
 			children = (
+				4ACB4E2E1D91199300051C23 /* ReusableCollectionView */,
 				4ACB4E291D910F4100051C23 /* CollectionViewCells */,
 				4A7283811D8FFE6200D39DFD /* PageViewController */,
 				4AE986D51D893702009345BB /* Models */,
@@ -338,6 +343,15 @@
 				4ACB4E2B1D910F6E00051C23 /* GeneroCollectionViewCell.xib */,
 			);
 			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		4ACB4E2E1D91199300051C23 /* ReusableCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				4ACB4E2F1D9119C000051C23 /* GeneroReusableCollectionView.swift */,
+				4ACB4E301D9119C000051C23 /* GeneroReusableCollectionView.xib */,
+			);
+			path = ReusableCollectionView;
 			sourceTree = "<group>";
 		};
 		4AE986D51D893702009345BB /* Models */ = {
@@ -553,6 +567,7 @@
 			files = (
 				4ACB4E2D1D910F6E00051C23 /* GeneroCollectionViewCell.xib in Resources */,
 				4AE986E61D893894009345BB /* OnDemandViewController.xib in Resources */,
+				4ACB4E321D9119C000051C23 /* GeneroReusableCollectionView.xib in Resources */,
 				4AE986F21D8938E1009345BB /* AjusteViewController.xib in Resources */,
 				4AE986EA1D8938AA009345BB /* EnterateViewController.xib in Resources */,
 				4A7283851D8FFE9300D39DFD /* RadioPageViewController.xib in Resources */,
@@ -638,6 +653,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AE986E51D893894009345BB /* OnDemandViewController.swift in Sources */,
+				4ACB4E311D9119C000051C23 /* GeneroReusableCollectionView.swift in Sources */,
 				4A52D9D01D8960A8005C3C32 /* MenuViewController.swift in Sources */,
 				4AE986E91D8938AA009345BB /* EnterateViewController.swift in Sources */,
 				4A72838C1D9009BD00D39DFD /* RadioProgramsViewController.swift in Sources */,
