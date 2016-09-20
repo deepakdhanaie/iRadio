@@ -456,12 +456,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A33B07D1D82B64D00CC29B0 /* Build configuration list for PBXNativeTarget "Grc2016_iOS" */;
 			buildPhases = (
-				8994B26E5E5629B1A2B12904 /* [CP] Check Pods Manifest.lock */,
 				4A33B0511D82B64D00CC29B0 /* Sources */,
 				4A33B0521D82B64D00CC29B0 /* Frameworks */,
 				4A33B0531D82B64D00CC29B0 /* Resources */,
-				C1125809B3CCDB2AAB2E9538 /* [CP] Embed Pods Frameworks */,
-				DB21A34FC951739B7FCED1FC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -589,55 +586,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		8994B26E5E5629B1A2B12904 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "
-";
-			showEnvVarsInLog = 0;
-		};
-		C1125809B3CCDB2AAB2E9538 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "";
-			showEnvVarsInLog = 0;
-		};
-		DB21A34FC951739B7FCED1FC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A33B0511D82B64D00CC29B0 /* Sources */ = {
