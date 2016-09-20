@@ -49,9 +49,11 @@ class RadioFavoriteViewController: UIViewController,UIActionSheetDelegate {
         
         headerView = nib.objectAtIndex(0) as? HeaderView
         
-        let frame : CGRect = CGRectMake(0,0,self.view.frame.size.width,200)
+        print(headerView?.frame)
         
-        headerView!.frame = frame
+       self.favouriteTableView?.tableHeaderView?.frame = CGRectMake(0,0,self.view.frame.size.width,182)
+        
+        self.favouriteTableView?.tableHeaderView = self.favouriteTableView?.tableHeaderView;
     }
     
     
@@ -101,21 +103,21 @@ class RadioFavoriteViewController: UIViewController,UIActionSheetDelegate {
     
     func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat{
         
-        return 80
+        return 64
     }
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         
-        let tempView = UIView(frame: CGRectMake(0, 0, self.view.frame.size.width, 25))
+        let tempView = UIView(frame: CGRectMake(0, 0, self.view.frame.size.width, 39))
         
         tempView.backgroundColor = UIColor.whiteColor()
         
-        let titlelabel = UILabel(frame: CGRectMake(20, 5,200, 21))
+        let titlelabel = UILabel(frame: CGRectMake(19, 14,200, 14))
         
-        titlelabel.textColor = UIColor(red:38.0/255.0, green:47.0/255.0, blue:64.0/255.0, alpha: 1.0)
+        titlelabel.textColor = UIColor.blackColor()
         
-        titlelabel.font = UIFont.boldSystemFontOfSize(18)
+        titlelabel.font = UIFont(name: "HelveticaNeue-Medium", size: 16.0)
         
         titlelabel.text = "Radio"
         
@@ -125,15 +127,15 @@ class RadioFavoriteViewController: UIViewController,UIActionSheetDelegate {
 
         
         if(isEditFirst == true){
-            editButton = UIButton(frame: CGRectMake(self.view.frame.size.width - (50 + 20), 5,50, 21))
+            editButton = UIButton(frame: CGRectMake(self.view.frame.size.width - (50 + 15), 15,50, 16))
             editButton!.setTitle("Editor", forState: .Normal)
             isEditFirst = false
         }
-     
+    
         
-        editButton?.titleLabel?.font = UIFont.systemFontOfSize(15)
+        editButton?.titleLabel?.font = UIFont(name: "HelveticaNeue", size: 11.0)
         
-        editButton!.setTitleColor(UIColor.lightGrayColor(), forState: .Normal)
+        editButton!.setTitleColor(UIColor(red:206.0/255.0, green:206.0/255.0, blue:206.0/255.0, alpha: 1.0), forState: .Normal)
         
         editButton!.addTarget(self, action: "editSongList", forControlEvents: .TouchUpInside)
         
@@ -147,7 +149,7 @@ class RadioFavoriteViewController: UIViewController,UIActionSheetDelegate {
 
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section == 0 {
-            return 30
+            return 39
         }
         return tableView.sectionHeaderHeight
     }
