@@ -38,6 +38,8 @@
 		4ACB4E361D91302A00051C23 /* GeneroCollectionViewTopHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB4E341D91302A00051C23 /* GeneroCollectionViewTopHeaderView.xib */; };
 		4ACB4E391D914A7A00051C23 /* RadioCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACB4E371D914A7A00051C23 /* RadioCollectionViewCell.swift */; };
 		4ACB4E3A1D914A7A00051C23 /* RadioCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB4E381D914A7A00051C23 /* RadioCollectionViewCell.xib */; };
+		4ACB4E3D1D91662300051C23 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACB4E3B1D91662300051C23 /* SearchViewController.swift */; };
+		4ACB4E3E1D91662300051C23 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB4E3C1D91662300051C23 /* SearchViewController.xib */; };
 		4AE986E11D89383E009345BB /* RadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE986DF1D89383E009345BB /* RadioViewController.swift */; };
 		4AE986E21D89383E009345BB /* RadioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE986E01D89383E009345BB /* RadioViewController.xib */; };
 		4AE986E51D893894009345BB /* OnDemandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE986E31D893894009345BB /* OnDemandViewController.swift */; };
@@ -103,6 +105,8 @@
 		4ACB4E341D91302A00051C23 /* GeneroCollectionViewTopHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeneroCollectionViewTopHeaderView.xib; sourceTree = "<group>"; };
 		4ACB4E371D914A7A00051C23 /* RadioCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioCollectionViewCell.swift; sourceTree = "<group>"; };
 		4ACB4E381D914A7A00051C23 /* RadioCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioCollectionViewCell.xib; sourceTree = "<group>"; };
+		4ACB4E3B1D91662300051C23 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		4ACB4E3C1D91662300051C23 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		4AE986DF1D89383E009345BB /* RadioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioViewController.swift; sourceTree = "<group>"; };
 		4AE986E01D89383E009345BB /* RadioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioViewController.xib; sourceTree = "<group>"; };
 		4AE986E31D893894009345BB /* OnDemandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnDemandViewController.swift; sourceTree = "<group>"; };
@@ -380,6 +384,8 @@
 				4A72838F1D9009E100D39DFD /* RadioFavoriteViewController.xib */,
 				4A7283921D9009F900D39DFD /* RadioCloudViewController.swift */,
 				4A7283931D9009F900D39DFD /* RadioCloudViewController.xib */,
+				4ACB4E3B1D91662300051C23 /* SearchViewController.swift */,
+				4ACB4E3C1D91662300051C23 /* SearchViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -572,6 +578,7 @@
 				4A33B08F1D82B83100CC29B0 /* CreateAccountViewController.xib in Resources */,
 				4A33B0601D82B64D00CC29B0 /* Assets.xcassets in Resources */,
 				4A7283951D9009F900D39DFD /* RadioCloudViewController.xib in Resources */,
+				4ACB4E3E1D91662300051C23 /* SearchViewController.xib in Resources */,
 				4A72838D1D9009BD00D39DFD /* RadioProgramsViewController.xib in Resources */,
 				4A7283911D9009E100D39DFD /* RadioFavoriteViewController.xib in Resources */,
 				4AE986E21D89383E009345BB /* RadioViewController.xib in Resources */,
@@ -614,6 +621,7 @@
 				4A7283841D8FFE9300D39DFD /* RadioPageViewController.swift in Sources */,
 				4AE986E11D89383E009345BB /* RadioViewController.swift in Sources */,
 				4A7283901D9009E100D39DFD /* RadioFavoriteViewController.swift in Sources */,
+				4ACB4E3D1D91662300051C23 /* SearchViewController.swift in Sources */,
 				4A33B08E1D82B83100CC29B0 /* CreateAccountViewController.swift in Sources */,
 				4A7283881D9009A200D39DFD /* RadioGeneroViewController.swift in Sources */,
 				4A33B0591D82B64D00CC29B0 /* AppDelegate.swift in Sources */,

@@ -8,9 +8,15 @@
 
 import UIKit
 
+protocol GeneroCollectionViewTopHeaderViewDelegate {
+    
+    func searchBarTapped()
+}
+
 class GeneroCollectionViewTopHeaderView: UICollectionReusableView {
     
-    
+    var delegate:GeneroCollectionViewTopHeaderViewDelegate?
+
     @IBOutlet weak var radioLabel: UILabel!
 
     override func awakeFromNib() {
@@ -23,6 +29,14 @@ class GeneroCollectionViewTopHeaderView: UICollectionReusableView {
         
         //self.backgroundColor = UIColor.yellowColor()
         //radioLabel.text = "Hello"
+    }
+    
+    
+    @IBAction func searchBarButtonTapped(sender: AnyObject) {
+        print("Tapped")
+        
+        NSNotificationCenter.defaultCenter().postNotificationName("searchBarTapped", object: nil)
+
     }
     
 }

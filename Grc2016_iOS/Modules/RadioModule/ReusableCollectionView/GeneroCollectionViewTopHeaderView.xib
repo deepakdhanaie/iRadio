@@ -11,12 +11,15 @@
             <rect key="frame" x="0.0" y="0.0" width="379" height="282"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
-                <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="fWq-bc-qMn">
+                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="fWq-bc-qMn">
                     <rect key="frame" x="8" y="0.0" width="363" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="9d4-7V-2JF"/>
                     </constraints>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="aO0-QI-9X7"/>
+                    </connections>
                 </searchBar>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d45-5h-dk4">
                     <rect key="frame" x="0.0" y="50" width="379" height="172"/>
@@ -35,16 +38,28 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wlu-2t-TJV">
+                    <rect key="frame" x="15" y="7" width="351" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Sqn-aw-htk"/>
+                    </constraints>
+                    <connections>
+                        <action selector="searchBarButtonTapped:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="9mN-5w-Lkt"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="fWq-bc-qMn" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="1bQ-Ve-bfE"/>
                 <constraint firstAttribute="trailing" secondItem="d45-5h-dk4" secondAttribute="trailing" id="G9q-qm-hGU"/>
+                <constraint firstItem="Wlu-2t-TJV" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="7" id="VBu-5d-zqx"/>
                 <constraint firstItem="d45-5h-dk4" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="aeh-fI-ehP"/>
                 <constraint firstAttribute="trailing" secondItem="fWq-bc-qMn" secondAttribute="trailing" constant="8" id="dAJ-hc-aTd"/>
                 <constraint firstItem="bYk-tb-eoa" firstAttribute="top" secondItem="d45-5h-dk4" secondAttribute="bottom" constant="19" id="iJX-xp-Iit"/>
                 <constraint firstItem="d45-5h-dk4" firstAttribute="top" secondItem="fWq-bc-qMn" secondAttribute="bottom" constant="6" id="nsq-BG-dER"/>
+                <constraint firstItem="Wlu-2t-TJV" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="15" id="toJ-Kg-APn"/>
                 <constraint firstItem="bYk-tb-eoa" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="tya-Tf-7sX"/>
+                <constraint firstAttribute="trailing" secondItem="Wlu-2t-TJV" secondAttribute="trailing" constant="13" id="uF5-Qg-Vgf"/>
                 <constraint firstItem="fWq-bc-qMn" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="usP-2l-KgJ"/>
             </constraints>
             <connections>

@@ -20,6 +20,9 @@ class RadioViewController: UIViewController,UIPageViewControllerDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "searchBarTapped:", name: "searchBarTapped", object: nil)
+
+        
         controllersArray = Array()
 
         // Do any additional setup after loading the view.
@@ -153,5 +156,13 @@ class RadioViewController: UIViewController,UIPageViewControllerDataSource {
             }
         }
         
+        
+        func searchBarTapped(notification:NSNotification)
+        {
+            print("notification fired")
+            
+            let searchViewController = SearchViewController(nibName: "SearchViewController", bundle: nil)
+            self.navigationController?.pushViewController(searchViewController, animated: true)
+        }
     
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RadioGeneroViewController: UIViewController {
+class RadioGeneroViewController: UIViewController,GeneroCollectionViewTopHeaderViewDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView!
     var headerView : GeneroReusableCollectionView?
@@ -84,10 +84,7 @@ extension RadioGeneroViewController: UICollectionViewDelegate, UICollectionViewD
                 topHeaderView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader,
                                                                                    withReuseIdentifier:"GeneroCollectionViewTopHeaderView", forIndexPath: indexPath) as?  GeneroCollectionViewTopHeaderView
                 
-                if(topHeaderView != nil){
-                    topHeaderView?.applyTheme()
-                    
-                }
+                topHeaderView?.delegate = self
                 
                 return topHeaderView!
             } else {
@@ -129,5 +126,9 @@ extension RadioGeneroViewController: UICollectionViewDelegate, UICollectionViewD
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
 }
+    
+    func searchBarTapped() {
+        print("called in controlelr ")
+    }
 }
 
