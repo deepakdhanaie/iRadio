@@ -8,36 +8,36 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="GeneroCollectionViewCell" reuseIdentifier="GeneroCollectionViewCell" id="gTV-IL-0wX" customClass="GeneroCollectionViewCell" customModule="Grc2016_iOS" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="221" height="150"/>
+            <rect key="frame" x="0.0" y="0.0" width="115" height="150"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="221" height="150"/>
+                <rect key="frame" x="0.0" y="0.0" width="115" height="150"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeRadio" translatesAutoresizingMaskIntoConstraints="NO" id="ltq-IO-HTV">
-                        <rect key="frame" x="0.0" y="0.0" width="221" height="108"/>
+                        <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
                         <color key="backgroundColor" red="0.87843137250000003" green="0.1960784314" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="108" id="2kf-w5-iDU"/>
+                            <constraint firstAttribute="height" constant="115" id="2kf-w5-iDU"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GNR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6L-lY-pw5">
-                        <rect key="frame" x="0.0" y="110" width="167" height="18"/>
+                        <rect key="frame" x="0.0" y="120" width="115" height="16"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="18" id="0e8-l1-QNm"/>
-                            <constraint firstAttribute="width" constant="167" id="Ih6-CG-Dkc"/>
+                            <constraint firstAttribute="height" constant="16" id="0e8-l1-QNm"/>
+                            <constraint firstAttribute="width" constant="115" id="Ih6-CG-Dkc"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="November Rain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDR-Lz-k4n">
-                        <rect key="frame" x="0.0" y="129" width="127" height="21"/>
+                        <rect key="frame" x="0.0" y="136" width="115" height="14"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="YmT-Lz-9jD"/>
-                            <constraint firstAttribute="width" constant="127" id="h5l-K4-vgI"/>
+                            <constraint firstAttribute="height" constant="14" id="YmT-Lz-9jD"/>
+                            <constraint firstAttribute="width" constant="115" id="h5l-K4-vgI"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" red="0.20784313725490194" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -49,12 +49,12 @@
                 <constraint firstItem="ltq-IO-HTV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Rek-Id-jvp"/>
                 <constraint firstItem="WDR-Lz-k4n" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="coa-vK-nVs"/>
                 <constraint firstItem="T6L-lY-pw5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gjQ-GV-Wnc"/>
-                <constraint firstItem="WDR-Lz-k4n" firstAttribute="top" secondItem="T6L-lY-pw5" secondAttribute="bottom" constant="1" id="qkZ-sx-ikv"/>
-                <constraint firstItem="T6L-lY-pw5" firstAttribute="top" secondItem="ltq-IO-HTV" secondAttribute="bottom" constant="2" id="tkX-5k-naK"/>
+                <constraint firstItem="WDR-Lz-k4n" firstAttribute="top" secondItem="T6L-lY-pw5" secondAttribute="bottom" id="qkZ-sx-ikv"/>
+                <constraint firstItem="T6L-lY-pw5" firstAttribute="top" secondItem="ltq-IO-HTV" secondAttribute="bottom" constant="5" id="tkX-5k-naK"/>
                 <constraint firstItem="ltq-IO-HTV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vTO-3M-MVT"/>
             </constraints>
-            <size key="customSize" width="221" height="150"/>
-            <point key="canvasLocation" x="221.5" y="185"/>
+            <size key="customSize" width="115" height="150"/>
+            <point key="canvasLocation" x="168.5" y="185"/>
         </collectionViewCell>
     </objects>
     <resources>

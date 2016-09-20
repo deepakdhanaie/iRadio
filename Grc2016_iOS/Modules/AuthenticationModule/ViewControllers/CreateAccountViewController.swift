@@ -37,6 +37,7 @@ class CreateAccountViewController: UIViewController {
     
     func configureTabBarController() {
         let tabBarController = UITabBarController()
+            tabBarController.tabBar.backgroundColor = UIColor.whiteColor()
         
         let radioViewController = RadioViewController(nibName: "RadioViewController", bundle: nil)
         
@@ -63,11 +64,11 @@ class CreateAccountViewController: UIViewController {
         let controllers = [radioNavigationViewController,onDemandNavigationViewController,enterateNavigationViewController,destertadorNavigationViewController,adusterNavigationViewController]
         tabBarController.viewControllers = controllers
         
-        let radioTabBarIconImage = UIImage(named: "RadioTabBarIcon")
-        let onDemandTabBarIconImage = UIImage(named: "OnDemandTabBarIcon")
-        let enterateTabBarIconImage = UIImage(named: "EnterateTabBarIcon")
-        let destertadorTabBarIconImage = UIImage(named: "DestertadorTabBarIcon")
-        let ajusteTabBarIconImage = UIImage(named: "AdjustTabBarIcon")
+        let radioTabBarIconImage = UIImage(named: "Estaciones")
+        let onDemandTabBarIconImage = UIImage(named: "Ondemand")
+        let enterateTabBarIconImage = UIImage(named: "Personalizar")
+        let destertadorTabBarIconImage = UIImage(named: "Despertador")
+        let ajusteTabBarIconImage = UIImage(named: "Enterate")
         
         
         radioViewController.tabBarItem = UITabBarItem(
