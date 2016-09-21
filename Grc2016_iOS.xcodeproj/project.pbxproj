@@ -54,6 +54,8 @@
 		4ACB4E431D9267DC00051C23 /* NoNetworkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB4E411D9267DC00051C23 /* NoNetworkViewController.xib */; };
 		4ACB4E461D9271A600051C23 /* AudioPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACB4E441D9271A600051C23 /* AudioPlayerViewController.swift */; };
 		4ACB4E471D9271A600051C23 /* AudioPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB4E451D9271A600051C23 /* AudioPlayerViewController.xib */; };
+		4ACB4E491D9297A300051C23 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACB4E481D9297A300051C23 /* CustomAlertView.swift */; };
+		4ACB4E4B1D9297B200051C23 /* CustomAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB4E4A1D9297B200051C23 /* CustomAlertView.xib */; };
 		4AE986E11D89383E009345BB /* RadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE986DF1D89383E009345BB /* RadioViewController.swift */; };
 		4AE986E21D89383E009345BB /* RadioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE986E01D89383E009345BB /* RadioViewController.xib */; };
 		4AE986E51D893894009345BB /* OnDemandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE986E31D893894009345BB /* OnDemandViewController.swift */; };
@@ -130,6 +132,8 @@
 		4ACB4E411D9267DC00051C23 /* NoNetworkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoNetworkViewController.xib; sourceTree = "<group>"; };
 		4ACB4E441D9271A600051C23 /* AudioPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewController.swift; sourceTree = "<group>"; };
 		4ACB4E451D9271A600051C23 /* AudioPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioPlayerViewController.xib; sourceTree = "<group>"; };
+		4ACB4E481D9297A300051C23 /* CustomAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		4ACB4E4A1D9297B200051C23 /* CustomAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAlertView.xib; sourceTree = "<group>"; };
 		4AE986DF1D89383E009345BB /* RadioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioViewController.swift; sourceTree = "<group>"; };
 		4AE986E01D89383E009345BB /* RadioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioViewController.xib; sourceTree = "<group>"; };
 		4AE986E31D893894009345BB /* OnDemandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnDemandViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +193,8 @@
 			children = (
 				1DDF7DC31D8FD40E00683220 /* HeaderView.swift */,
 				1DDF7DC61D8FD42000683220 /* HeaderView.xib */,
+				4ACB4E481D9297A300051C23 /* CustomAlertView.swift */,
+				4ACB4E4A1D9297B200051C23 /* CustomAlertView.xib */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -640,6 +646,7 @@
 				4ACB4E3E1D91662300051C23 /* SearchViewController.xib in Resources */,
 				4A72838D1D9009BD00D39DFD /* RadioProgramsViewController.xib in Resources */,
 				4A7283911D9009E100D39DFD /* RadioFavoriteViewController.xib in Resources */,
+				4ACB4E4B1D9297B200051C23 /* CustomAlertView.xib in Resources */,
 				4AE986E21D89383E009345BB /* RadioViewController.xib in Resources */,
 				1DDF7DBD1D8FCEF500683220 /* FavouriteTableViewCell.xib in Resources */,
 			);
@@ -671,6 +678,7 @@
 				1DDF7DB71D8FC9FE00683220 /* Favourite.swift in Sources */,
 				4AE986E51D893894009345BB /* OnDemandViewController.swift in Sources */,
 				4ACB4E311D9119C000051C23 /* GeneroReusableCollectionView.swift in Sources */,
+				4ACB4E491D9297A300051C23 /* CustomAlertView.swift in Sources */,
 				4ACB4E351D91302A00051C23 /* GeneroCollectionViewTopHeaderView.swift in Sources */,
 				4A52D9D01D8960A8005C3C32 /* MenuViewController.swift in Sources */,
 				1DDF7DBB1D8FCEF500683220 /* FavouriteTableViewCell.swift in Sources */,

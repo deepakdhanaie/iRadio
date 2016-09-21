@@ -85,7 +85,7 @@
                                     <rect key="frame" x="0.0" y="588" width="600" height="97"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exk-pv-0bD">
-                                            <rect key="frame" x="42" y="53" width="21" height="22"/>
+                                            <rect key="frame" x="42" y="38" width="21" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="21" id="eSV-qv-Na6"/>
                                                 <constraint firstAttribute="height" constant="22" id="hWK-Uj-0ar"/>
@@ -104,7 +104,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0B7-Hx-7F4">
-                                            <rect key="frame" x="521" y="53" width="21" height="22"/>
+                                            <rect key="frame" x="521" y="38" width="21" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="21" id="4b2-VM-dhf"/>
                                                 <constraint firstAttribute="height" constant="22" id="ENn-D3-mar"/>
@@ -114,12 +114,12 @@
                                     </subviews>
                                     <color key="backgroundColor" red="0.76078431372549016" green="0.14901960784313725" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstItem="exk-pv-0bD" firstAttribute="centerY" secondItem="keo-ci-FXR" secondAttribute="centerY" constant="15.5" id="AKj-Qc-WsM"/>
+                                        <constraint firstItem="exk-pv-0bD" firstAttribute="centerY" secondItem="keo-ci-FXR" secondAttribute="centerY" id="AKj-Qc-WsM"/>
                                         <constraint firstItem="tNi-EX-YKE" firstAttribute="centerY" secondItem="keo-ci-FXR" secondAttribute="centerY" id="GDq-Ql-qPq"/>
                                         <constraint firstItem="exk-pv-0bD" firstAttribute="leading" secondItem="keo-ci-FXR" secondAttribute="leading" constant="42" id="QEt-Ma-ZaT"/>
                                         <constraint firstAttribute="height" constant="97" id="bCg-nc-Ul6"/>
                                         <constraint firstAttribute="trailing" secondItem="0B7-Hx-7F4" secondAttribute="trailing" constant="58" id="eL5-FA-bFR"/>
-                                        <constraint firstItem="0B7-Hx-7F4" firstAttribute="centerY" secondItem="keo-ci-FXR" secondAttribute="centerY" constant="15.5" id="ofs-io-H0V"/>
+                                        <constraint firstItem="0B7-Hx-7F4" firstAttribute="centerY" secondItem="keo-ci-FXR" secondAttribute="centerY" id="ofs-io-H0V"/>
                                         <constraint firstItem="tNi-EX-YKE" firstAttribute="centerX" secondItem="keo-ci-FXR" secondAttribute="centerX" id="sEQ-5o-GeY"/>
                                     </constraints>
                                 </view>
