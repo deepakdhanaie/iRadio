@@ -30,8 +30,8 @@ class RadioFavoriteViewController: UIViewController,UIActionSheetDelegate {
         // Do any additional setup after loading the view.
         
         self.registerHeaderView()
-        headerView?.delegate = self
-        headerView?.configureView(true)
+       
+        headerView?.configureView(false)
         favouriteTableView?.tableHeaderView = headerView
         isEditFirst = true
     }
@@ -188,25 +188,7 @@ class RadioFavoriteViewController: UIViewController,UIActionSheetDelegate {
         
     }
     
-    //***********************************************************************
-    // MARK:
-    // MARK: - Default sharing related methods
-    // MARK:
-    //***********************************************************************
-    
-    
-    func showActivityController(){
-        
-        let activityViewController = UIActivityViewController(activityItems:[], applicationActivities: nil)
-        // Exclude irrelevant activities
-//        activityViewController.excludedActivityTypes =
-//            [UIActivityTypeAssignToContact, UIActivityTypeSaveToCameraRoll, UIActivityTypePostToFlickr,
-//                UIActivityTypePostToVimeo,UIActivityTypePostToTwitter,UIActivityTypePostToFacebook]
-        
-        self.presentViewController(activityViewController, animated: true, completion: nil)
-        
-    }
-    
+       
     
     func showActionSheet(){
         let actionSheet = UIActionSheet(title: "Choose Option", delegate: self, cancelButtonTitle: "Cancel", destructiveButtonTitle: nil, otherButtonTitles: "Save", "Delete")
@@ -218,31 +200,8 @@ class RadioFavoriteViewController: UIViewController,UIActionSheetDelegate {
 }
 
 
-extension RadioFavoriteViewController : HeaderViewDelegate,FavouriteTableViewCellDelegate{
-    
-       func buttonTapped(buttonIndex: Int){
-        
-        switch (buttonIndex) {
-            
-        case LIKEBUTTONTAG : break
-            
-        case SHAREBUTTONTAG :
-            self.showActivityController()
-              break
-            
-        case FAVOURITEBUTTONTAG :
-            break
-            
-        default:
-            break
-            
-            
-        }
+extension RadioFavoriteViewController :FavouriteTableViewCellDelegate{
 
-        
-    }
-    
-    
     func programToSchedule(){
         
         self.showActionSheet()
