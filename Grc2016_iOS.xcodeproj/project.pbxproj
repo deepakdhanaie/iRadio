@@ -46,12 +46,14 @@
 		4ACB4E311D9119C000051C23 /* GeneroReusableCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACB4E2F1D9119C000051C23 /* GeneroReusableCollectionView.swift */; };
 		4ACB4E321D9119C000051C23 /* GeneroReusableCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB4E301D9119C000051C23 /* GeneroReusableCollectionView.xib */; };
 		4ACB4E351D91302A00051C23 /* GeneroCollectionViewTopHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACB4E331D91302A00051C23 /* GeneroCollectionViewTopHeaderView.swift */; };
-		4ACB4E361D91302A00051C23 /* GeneroCollectionViewTopHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB4E341D91302A00051C23 /* GeneroCollectionViewTopHeaderView.xib */; };
 		4ACB4E391D914A7A00051C23 /* RadioCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACB4E371D914A7A00051C23 /* RadioCollectionViewCell.swift */; };
 		4ACB4E3A1D914A7A00051C23 /* RadioCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB4E381D914A7A00051C23 /* RadioCollectionViewCell.xib */; };
 		4ACB4E3D1D91662300051C23 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACB4E3B1D91662300051C23 /* SearchViewController.swift */; };
 		4ACB4E3E1D91662300051C23 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB4E3C1D91662300051C23 /* SearchViewController.xib */; };
-
+		4ACB4E421D9267DC00051C23 /* NoNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACB4E401D9267DC00051C23 /* NoNetworkViewController.swift */; };
+		4ACB4E431D9267DC00051C23 /* NoNetworkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB4E411D9267DC00051C23 /* NoNetworkViewController.xib */; };
+		4ACB4E461D9271A600051C23 /* AudioPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACB4E441D9271A600051C23 /* AudioPlayerViewController.swift */; };
+		4ACB4E471D9271A600051C23 /* AudioPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACB4E451D9271A600051C23 /* AudioPlayerViewController.xib */; };
 		4AE986E11D89383E009345BB /* RadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE986DF1D89383E009345BB /* RadioViewController.swift */; };
 		4AE986E21D89383E009345BB /* RadioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE986E01D89383E009345BB /* RadioViewController.xib */; };
 		4AE986E51D893894009345BB /* OnDemandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE986E31D893894009345BB /* OnDemandViewController.swift */; };
@@ -124,6 +126,10 @@
 		4ACB4E381D914A7A00051C23 /* RadioCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioCollectionViewCell.xib; sourceTree = "<group>"; };
 		4ACB4E3B1D91662300051C23 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		4ACB4E3C1D91662300051C23 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		4ACB4E401D9267DC00051C23 /* NoNetworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoNetworkViewController.swift; sourceTree = "<group>"; };
+		4ACB4E411D9267DC00051C23 /* NoNetworkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoNetworkViewController.xib; sourceTree = "<group>"; };
+		4ACB4E441D9271A600051C23 /* AudioPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewController.swift; sourceTree = "<group>"; };
+		4ACB4E451D9271A600051C23 /* AudioPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioPlayerViewController.xib; sourceTree = "<group>"; };
 		4AE986DF1D89383E009345BB /* RadioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioViewController.swift; sourceTree = "<group>"; };
 		4AE986E01D89383E009345BB /* RadioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioViewController.xib; sourceTree = "<group>"; };
 		4AE986E31D893894009345BB /* OnDemandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnDemandViewController.swift; sourceTree = "<group>"; };
@@ -251,6 +257,7 @@
 		4A33B0861D82B75C00CC29B0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4ACB4E3F1D9267C000051C23 /* NoNetworkModule */,
 				4A52D9CC1D896061005C3C32 /* MenuModule */,
 				1DE8DD001D84B33E002C37C8 /* Tabbar */,
 				4A33B0951D82BB7B00CC29B0 /* AjusteModule */,
@@ -409,6 +416,15 @@
 			path = ReusableCollectionView;
 			sourceTree = "<group>";
 		};
+		4ACB4E3F1D9267C000051C23 /* NoNetworkModule */ = {
+			isa = PBXGroup;
+			children = (
+				4ACB4E401D9267DC00051C23 /* NoNetworkViewController.swift */,
+				4ACB4E411D9267DC00051C23 /* NoNetworkViewController.xib */,
+			);
+			path = NoNetworkModule;
+			sourceTree = "<group>";
+		};
 		4AE986D61D893702009345BB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -424,6 +440,8 @@
 				4A7283931D9009F900D39DFD /* RadioCloudViewController.xib */,
 				4ACB4E3B1D91662300051C23 /* SearchViewController.swift */,
 				4ACB4E3C1D91662300051C23 /* SearchViewController.xib */,
+				4ACB4E441D9271A600051C23 /* AudioPlayerViewController.swift */,
+				4ACB4E451D9271A600051C23 /* AudioPlayerViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -605,6 +623,7 @@
 				1D66C1851D8FFDEF00712B75 /* GeneroCollectionViewTopHeaderView.xib in Resources */,
 				4ACB4E2D1D910F6E00051C23 /* GeneroCollectionViewCell.xib in Resources */,
 				4AE986E61D893894009345BB /* OnDemandViewController.xib in Resources */,
+				4ACB4E431D9267DC00051C23 /* NoNetworkViewController.xib in Resources */,
 				4ACB4E321D9119C000051C23 /* GeneroReusableCollectionView.xib in Resources */,
 				4AE986F21D8938E1009345BB /* AjusteViewController.xib in Resources */,
 				1DDF7DC71D8FD42000683220 /* HeaderView.xib in Resources */,
@@ -613,6 +632,7 @@
 				4A7283891D9009A200D39DFD /* RadioGeneroViewController.xib in Resources */,
 				4ACB4E3A1D914A7A00051C23 /* RadioCollectionViewCell.xib in Resources */,
 				4A52D9D11D8960A8005C3C32 /* MenuViewController.xib in Resources */,
+				4ACB4E471D9271A600051C23 /* AudioPlayerViewController.xib in Resources */,
 				4AE986EE1D8938C2009345BB /* DestertadorViewController.xib in Resources */,
 				4A33B08F1D82B83100CC29B0 /* CreateAccountViewController.xib in Resources */,
 				4A33B0601D82B64D00CC29B0 /* Assets.xcassets in Resources */,
@@ -658,6 +678,7 @@
 				4A72838C1D9009BD00D39DFD /* RadioProgramsViewController.swift in Sources */,
 				4ACB4E391D914A7A00051C23 /* RadioCollectionViewCell.swift in Sources */,
 				4A3269141D8FC31C00A1468C /* Utility.swift in Sources */,
+				4ACB4E461D9271A600051C23 /* AudioPlayerViewController.swift in Sources */,
 				4ACB4E2C1D910F6E00051C23 /* GeneroCollectionViewCell.swift in Sources */,
 				4AE986F11D8938E1009345BB /* AjusteViewController.swift in Sources */,
 				4AE986ED1D8938C2009345BB /* DestertadorViewController.swift in Sources */,
@@ -670,6 +691,7 @@
 				1DDF7DC41D8FD40E00683220 /* HeaderView.swift in Sources */,
 				4A7283881D9009A200D39DFD /* RadioGeneroViewController.swift in Sources */,
 				4A33B0591D82B64D00CC29B0 /* AppDelegate.swift in Sources */,
+				4ACB4E421D9267DC00051C23 /* NoNetworkViewController.swift in Sources */,
 				4A7283941D9009F900D39DFD /* RadioCloudViewController.swift in Sources */,
 				4A33B09A1D82C4A500CC29B0 /* Constants.swift in Sources */,
 			);

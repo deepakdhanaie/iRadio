@@ -124,6 +124,8 @@ extension RadioGeneroViewController: UICollectionViewDelegate, UICollectionViewD
     
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        NSNotificationCenter.defaultCenter().postNotificationName("radioItemTapped", object: indexPath)
+
         
 }
     

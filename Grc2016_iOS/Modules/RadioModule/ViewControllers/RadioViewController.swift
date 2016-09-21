@@ -21,6 +21,9 @@ class RadioViewController: UIViewController,UIPageViewControllerDataSource {
         super.viewDidLoad()
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "searchBarTapped:", name: "searchBarTapped", object: nil)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "radioItemTapped:", name: "radioItemTapped", object: nil)
+
 
         
         controllersArray = Array()
@@ -155,6 +158,16 @@ class RadioViewController: UIViewController,UIPageViewControllerDataSource {
             
             let searchViewController = SearchViewController(nibName: "SearchViewController", bundle: nil)
             self.navigationController?.pushViewController(searchViewController, animated: true)
+        }
+        
+        
+        
+        func radioItemTapped(notification:NSNotification)
+        {
+            print("notification fired")
+            
+            let audioController = AudioPlayerViewController(nibName: "AudioPlayerViewController", bundle: nil)
+            self.navigationController?.pushViewController(audioController, animated: true)
         }
     
 }
