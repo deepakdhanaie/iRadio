@@ -70,7 +70,7 @@
                 <outlet property="extraInfoButton" destination="Xkn-UO-Fuh" id="jyF-Ex-brk"/>
                 <outlet property="singerNameLabel" destination="ybW-AK-qXB" id="JvE-uq-ojg"/>
             </connections>
-            <point key="canvasLocation" x="366" y="369"/>
+            <point key="canvasLocation" x="615" y="291"/>
         </tableViewCell>
     </objects>
     <resources>

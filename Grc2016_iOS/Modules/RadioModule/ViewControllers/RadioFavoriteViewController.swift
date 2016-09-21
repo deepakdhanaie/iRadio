@@ -30,10 +30,12 @@ class RadioFavoriteViewController: UIViewController,UIActionSheetDelegate {
         // Do any additional setup after loading the view.
         
         self.registerHeaderView()
-        headerView?.delegate = self
-        headerView?.configureView(true)
+       
+        headerView?.configureView(false)
         favouriteTableView?.tableHeaderView = headerView
         isEditFirst = true
+        
+        //self.setupConstraints()
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,9 +53,11 @@ class RadioFavoriteViewController: UIViewController,UIActionSheetDelegate {
         
         print(headerView?.frame)
         
-       self.favouriteTableView?.tableHeaderView?.frame = CGRectMake(0,0,self.view.frame.size.width,182)
+         headerView?.frame = CGRectMake(0,0,self.view.frame.size.width,262)
         
-        self.favouriteTableView?.tableHeaderView = self.favouriteTableView?.tableHeaderView;
+        self.favouriteTableView?.tableHeaderView = headerView
+        
+        
     }
     
     
@@ -188,25 +192,7 @@ class RadioFavoriteViewController: UIViewController,UIActionSheetDelegate {
         
     }
     
-    //***********************************************************************
-    // MARK:
-    // MARK: - Default sharing related methods
-    // MARK:
-    //***********************************************************************
-    
-    
-    func showActivityController(){
-        
-        let activityViewController = UIActivityViewController(activityItems:[], applicationActivities: nil)
-        // Exclude irrelevant activities
-//        activityViewController.excludedActivityTypes =
-//            [UIActivityTypeAssignToContact, UIActivityTypeSaveToCameraRoll, UIActivityTypePostToFlickr,
-//                UIActivityTypePostToVimeo,UIActivityTypePostToTwitter,UIActivityTypePostToFacebook]
-        
-        self.presentViewController(activityViewController, animated: true, completion: nil)
-        
-    }
-    
+       
     
     func showActionSheet(){
         let actionSheet = UIActionSheet(title: "Choose Option", delegate: self, cancelButtonTitle: "Cancel", destructiveButtonTitle: nil, otherButtonTitles: "Save", "Delete")
@@ -214,35 +200,31 @@ class RadioFavoriteViewController: UIViewController,UIActionSheetDelegate {
         actionSheet.showFromTabBar(tabbar!)
     }
     
+    private func setupConstraints(){
+        let tableHeaderView =   self.favouriteTableView?.tableHeaderView
+        
+        headerView!.translatesAutoresizingMaskIntoConstraints = false
+        
+        tableHeaderView!.addConstraints([NSLayoutConstraint(item: headerView!, attribute:
+            NSLayoutAttribute.Leading, relatedBy: NSLayoutRelation.Equal, toItem: tableHeaderView, attribute:NSLayoutAttribute.Leading, multiplier: 1.0, constant:0.0),
+            
+            NSLayoutConstraint(item: headerView!, attribute: NSLayoutAttribute.Trailing, relatedBy: NSLayoutRelation.Equal, toItem: tableHeaderView, attribute: NSLayoutAttribute.Trailing, multiplier: 1.0, constant: 0.0),
+            
+            NSLayoutConstraint(item: headerView!, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: tableHeaderView, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0),
+            
+             NSLayoutConstraint(item: headerView!, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: tableHeaderView, attribute: NSLayoutAttribute.Height, multiplier: 1.0, constant: 182)])
+        
+         self.favouriteTableView?.layoutIfNeeded()
+        
+    }
+
+    
 
 }
 
 
-extension RadioFavoriteViewController : HeaderViewDelegate,FavouriteTableViewCellDelegate{
-    
-       func buttonTapped(buttonIndex: Int){
-        
-        switch (buttonIndex) {
-            
-        case LIKEBUTTONTAG : break
-            
-        case SHAREBUTTONTAG :
-            self.showActivityController()
-              break
-            
-        case FAVOURITEBUTTONTAG :
-            break
-            
-        default:
-            break
-            
-            
-        }
+extension RadioFavoriteViewController :FavouriteTableViewCellDelegate{
 
-        
-    }
-    
-    
     func programToSchedule(){
         
         self.showActionSheet()

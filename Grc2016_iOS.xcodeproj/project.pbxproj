@@ -21,6 +21,14 @@
 		1DE8DD021D84B3A9002C37C8 /* RATabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8DD011D84B3A8002C37C8 /* RATabBar.swift */; };
 		1DE8DD031D84B3A9002C37C8 /* RATabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8DD011D84B3A8002C37C8 /* RATabBar.swift */; };
 		1DE8DD041D84B3A9002C37C8 /* RATabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8DD011D84B3A8002C37C8 /* RATabBar.swift */; };
+		1DF8C99B1D9279E10062C143 /* RadioStationProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF8C9991D9279E10062C143 /* RadioStationProfileViewController.swift */; };
+		1DF8C99C1D9279E10062C143 /* RadioStationProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF8C9991D9279E10062C143 /* RadioStationProfileViewController.swift */; };
+		1DF8C99D1D9279E10062C143 /* RadioStationProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DF8C99A1D9279E10062C143 /* RadioStationProfileViewController.xib */; };
+		1DF8C99E1D9279E10062C143 /* RadioStationProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DF8C99A1D9279E10062C143 /* RadioStationProfileViewController.xib */; };
+		1DF8C9A11D9286D10062C143 /* StationProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF8C99F1D9286D10062C143 /* StationProfileTableViewCell.swift */; };
+		1DF8C9A21D9286D10062C143 /* StationProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF8C99F1D9286D10062C143 /* StationProfileTableViewCell.swift */; };
+		1DF8C9A31D9286D10062C143 /* StationProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DF8C9A01D9286D10062C143 /* StationProfileTableViewCell.xib */; };
+		1DF8C9A41D9286D10062C143 /* StationProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DF8C9A01D9286D10062C143 /* StationProfileTableViewCell.xib */; };
 		4A3269141D8FC31C00A1468C /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3269131D8FC31C00A1468C /* Utility.swift */; };
 		4A33B0591D82B64D00CC29B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A33B0581D82B64D00CC29B0 /* AppDelegate.swift */; };
 		4A33B0601D82B64D00CC29B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A33B05F1D82B64D00CC29B0 /* Assets.xcassets */; };
@@ -92,6 +100,10 @@
 		1DDF7DC31D8FD40E00683220 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		1DDF7DC61D8FD42000683220 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		1DE8DD011D84B3A8002C37C8 /* RATabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RATabBar.swift; sourceTree = "<group>"; };
+		1DF8C9991D9279E10062C143 /* RadioStationProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioStationProfileViewController.swift; sourceTree = "<group>"; };
+		1DF8C99A1D9279E10062C143 /* RadioStationProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioStationProfileViewController.xib; sourceTree = "<group>"; };
+		1DF8C99F1D9286D10062C143 /* StationProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationProfileTableViewCell.swift; sourceTree = "<group>"; };
+		1DF8C9A01D9286D10062C143 /* StationProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StationProfileTableViewCell.xib; sourceTree = "<group>"; };
 		4A3269131D8FC31C00A1468C /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = Grc2016_iOS/Modules/MenuModule/ViewControllers/Utility.swift; sourceTree = SOURCE_ROOT; };
 		4A33B0551D82B64D00CC29B0 /* Grc2016_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grc2016_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A33B0581D82B64D00CC29B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +188,8 @@
 			children = (
 				1DDF7DB91D8FCEF500683220 /* FavouriteTableViewCell.swift */,
 				1DDF7DBA1D8FCEF500683220 /* FavouriteTableViewCell.xib */,
+				1DF8C99F1D9286D10062C143 /* StationProfileTableViewCell.swift */,
+				1DF8C9A01D9286D10062C143 /* StationProfileTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -446,8 +460,13 @@
 				4A7283931D9009F900D39DFD /* RadioCloudViewController.xib */,
 				4ACB4E3B1D91662300051C23 /* SearchViewController.swift */,
 				4ACB4E3C1D91662300051C23 /* SearchViewController.xib */,
+
 				4ACB4E441D9271A600051C23 /* AudioPlayerViewController.swift */,
 				4ACB4E451D9271A600051C23 /* AudioPlayerViewController.xib */,
+
+				1DF8C9991D9279E10062C143 /* RadioStationProfileViewController.swift */,
+				1DF8C99A1D9279E10062C143 /* RadioStationProfileViewController.xib */,
+
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -644,9 +663,14 @@
 				4A33B0601D82B64D00CC29B0 /* Assets.xcassets in Resources */,
 				4A7283951D9009F900D39DFD /* RadioCloudViewController.xib in Resources */,
 				4ACB4E3E1D91662300051C23 /* SearchViewController.xib in Resources */,
+				1DF8C9A31D9286D10062C143 /* StationProfileTableViewCell.xib in Resources */,
 				4A72838D1D9009BD00D39DFD /* RadioProgramsViewController.xib in Resources */,
 				4A7283911D9009E100D39DFD /* RadioFavoriteViewController.xib in Resources */,
+
 				4ACB4E4B1D9297B200051C23 /* CustomAlertView.xib in Resources */,
+
+				1DF8C99D1D9279E10062C143 /* RadioStationProfileViewController.xib in Resources */,
+
 				4AE986E21D89383E009345BB /* RadioViewController.xib in Resources */,
 				1DDF7DBD1D8FCEF500683220 /* FavouriteTableViewCell.xib in Resources */,
 			);
@@ -656,7 +680,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DF8C99E1D9279E10062C143 /* RadioStationProfileViewController.xib in Resources */,
 				1DDF7DBE1D8FCEF500683220 /* FavouriteTableViewCell.xib in Resources */,
+				1DF8C9A41D9286D10062C143 /* StationProfileTableViewCell.xib in Resources */,
 				1DDF7DC81D8FD42000683220 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -675,6 +701,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DF8C9A11D9286D10062C143 /* StationProfileTableViewCell.swift in Sources */,
 				1DDF7DB71D8FC9FE00683220 /* Favourite.swift in Sources */,
 				4AE986E51D893894009345BB /* OnDemandViewController.swift in Sources */,
 				4ACB4E311D9119C000051C23 /* GeneroReusableCollectionView.swift in Sources */,
@@ -701,6 +728,7 @@
 				4A33B0591D82B64D00CC29B0 /* AppDelegate.swift in Sources */,
 				4ACB4E421D9267DC00051C23 /* NoNetworkViewController.swift in Sources */,
 				4A7283941D9009F900D39DFD /* RadioCloudViewController.swift in Sources */,
+				1DF8C99B1D9279E10062C143 /* RadioStationProfileViewController.swift in Sources */,
 				4A33B09A1D82C4A500CC29B0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -710,10 +738,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DDF7DC51D8FD40E00683220 /* HeaderView.swift in Sources */,
+				1DF8C9A21D9286D10062C143 /* StationProfileTableViewCell.swift in Sources */,
 				1DE8DD031D84B3A9002C37C8 /* RATabBar.swift in Sources */,
 				4A33B06E1D82B64D00CC29B0 /* Grc2016_iOSTests.swift in Sources */,
 				1DDF7DB81D8FC9FE00683220 /* Favourite.swift in Sources */,
 				1DDF7DBC1D8FCEF500683220 /* FavouriteTableViewCell.swift in Sources */,
+				1DF8C99C1D9279E10062C143 /* RadioStationProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

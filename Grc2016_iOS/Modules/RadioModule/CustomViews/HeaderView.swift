@@ -21,6 +21,7 @@ class HeaderView: UIView {
     @IBOutlet weak var favouriteButton : UIButton?
     @IBOutlet weak var shareButton : UIButton?
     
+    @IBOutlet weak var bottomLabelHeightConstraint: NSLayoutConstraint?
     // delegate
     var delegate:HeaderViewDelegate?
     
@@ -30,6 +31,7 @@ class HeaderView: UIView {
        favouriteButton?.tag = FAVOURITEBUTTONTAG
     }
  
+    
     func configureView (isPlayer: Bool){
         
         likeButton?.hidden = true
@@ -40,6 +42,16 @@ class HeaderView: UIView {
             likeButton?.hidden = false
             favouriteButton?.hidden = false
             shareButton?.hidden = false
+            
+             headerImageView?.frame = CGRectMake(0,0,self.frame.size.width,201)
+            bottomLabelHeightConstraint?.constant = 34
+            
+            
+        }
+        else{
+            headerImageView?.frame = CGRectMake(0,0,self.frame.size.width,182)
+            bottomLabelHeightConstraint?.constant = 0
+            
         }
         
         
@@ -55,6 +67,9 @@ class HeaderView: UIView {
 
     }
     
+    override func layoutSubviews() {
+         self.layoutIfNeeded()
+    }
 
     
     

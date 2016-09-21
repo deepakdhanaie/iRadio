@@ -21,7 +21,7 @@
                         <constraint firstAttribute="height" constant="21" id="Bn5-wk-g4F"/>
                         <constraint firstAttribute="width" constant="203" id="j4g-Gm-kCc"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -47,11 +47,11 @@
                     </variation>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNF-JN-txD">
-                    <rect key="frame" x="75" y="174" width="170" height="30"/>
-                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="48" y="174" width="226" height="51"/>
+                    <color key="backgroundColor" red="0.050980392156862744" green="0.42352941176470588" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="Me3-qp-ljg"/>
-                        <constraint firstAttribute="width" constant="170" id="Qch-Nt-9sk"/>
+                        <constraint firstAttribute="height" constant="51" id="Me3-qp-ljg"/>
+                        <constraint firstAttribute="width" constant="226" id="Qch-Nt-9sk"/>
                     </constraints>
                     <state key="normal" title="Facebook">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -61,11 +61,11 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ui-0W-DbY">
-                    <rect key="frame" x="75" y="236" width="170" height="30"/>
-                    <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="48" y="243" width="226" height="51"/>
+                    <color key="backgroundColor" red="0.066666666666666666" green="0.65490196078431373" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="R5m-vT-obL"/>
-                        <constraint firstAttribute="width" constant="170" id="eCE-AP-y3L"/>
+                        <constraint firstAttribute="height" constant="51" id="R5m-vT-obL"/>
+                        <constraint firstAttribute="width" constant="226" id="eCE-AP-y3L"/>
                     </constraints>
                     <state key="normal" title="Twitter">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -75,56 +75,58 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucU-cd-PPu">
-                    <rect key="frame" x="75" y="298" width="170" height="30"/>
-                    <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="48" y="312" width="226" height="51"/>
+                    <color key="backgroundColor" red="0.81960784313725488" green="0.10588235294117647" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="cCk-zD-rfG"/>
-                        <constraint firstAttribute="width" constant="170" id="pnW-Qc-dCD"/>
+                        <constraint firstAttribute="height" constant="51" id="cCk-zD-rfG"/>
+                        <constraint firstAttribute="width" constant="226" id="pnW-Qc-dCD"/>
                     </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                     <state key="normal" title="Google Plus">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
                         <action selector="googlePlusButtonTapped:" destination="-1" eventType="touchUpInside" id="cu0-hg-vaf"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agN-U5-Fh5">
-                    <rect key="frame" x="75" y="360" width="170" height="30"/>
-                    <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="48" y="381" width="226" height="51"/>
+                    <color key="backgroundColor" red="0.62745098039215685" green="0.13725490196078433" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="T8z-Cw-Xd1"/>
-                        <constraint firstAttribute="width" constant="170" id="UM0-K4-nAU"/>
+                        <constraint firstAttribute="height" constant="51" id="T8z-Cw-Xd1"/>
+                        <constraint firstAttribute="width" constant="226" id="UM0-K4-nAU"/>
                     </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                     <state key="normal" title="Omitir">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
                         <action selector="omitirButtonTapped:" destination="-1" eventType="touchUpInside" id="Cok-uM-4KQ"/>
                     </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kwh-Rz-zia">
-                    <rect key="frame" x="75" y="426" width="170" height="86"/>
+                    <rect key="frame" x="75" y="447" width="170" height="86"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="170" id="BNw-gv-boE"/>
                         <constraint firstAttribute="height" constant="86" id="V2l-kc-7Ve"/>
                     </constraints>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.76078431372549016" green="0.14901960784313725" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="agN-U5-Fh5" firstAttribute="top" secondItem="ucU-cd-PPu" secondAttribute="bottom" constant="32" id="6GM-Ct-AZN"/>
+                <constraint firstItem="agN-U5-Fh5" firstAttribute="top" secondItem="ucU-cd-PPu" secondAttribute="bottom" constant="18" id="6GM-Ct-AZN"/>
                 <constraint firstItem="zNF-JN-txD" firstAttribute="top" secondItem="Qxt-wL-Gs4" secondAttribute="bottom" constant="41" id="8a6-id-LhB"/>
-                <constraint firstItem="agN-U5-Fh5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Anv-CN-HgQ"/>
-                <constraint firstItem="ucU-cd-PPu" firstAttribute="top" secondItem="5Ui-0W-DbY" secondAttribute="bottom" constant="32" id="Df2-Gl-q3M"/>
-                <constraint firstItem="Kwh-Rz-zia" firstAttribute="top" secondItem="agN-U5-Fh5" secondAttribute="bottom" constant="36" id="H4f-R2-II1"/>
-                <constraint firstItem="ucU-cd-PPu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IYb-Np-KS0"/>
-                <constraint firstItem="5Ui-0W-DbY" firstAttribute="top" secondItem="zNF-JN-txD" secondAttribute="bottom" constant="32" id="Ib0-NY-io9"/>
-                <constraint firstItem="5Ui-0W-DbY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="K9G-xq-Yn1"/>
+                <constraint firstItem="agN-U5-Fh5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="1" id="Anv-CN-HgQ"/>
+                <constraint firstItem="ucU-cd-PPu" firstAttribute="top" secondItem="5Ui-0W-DbY" secondAttribute="bottom" constant="18" id="Df2-Gl-q3M"/>
+                <constraint firstItem="Kwh-Rz-zia" firstAttribute="top" secondItem="agN-U5-Fh5" secondAttribute="bottom" constant="15" id="H4f-R2-II1"/>
+                <constraint firstItem="ucU-cd-PPu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="1" id="IYb-Np-KS0"/>
+                <constraint firstItem="5Ui-0W-DbY" firstAttribute="top" secondItem="zNF-JN-txD" secondAttribute="bottom" constant="18" id="Ib0-NY-io9"/>
+                <constraint firstItem="5Ui-0W-DbY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="1" id="K9G-xq-Yn1"/>
                 <constraint firstItem="Kwh-Rz-zia" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KkY-Y3-UOe"/>
                 <constraint firstItem="A3S-PA-NtX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="35" id="MKq-Et-TRx"/>
                 <constraint firstItem="Qxt-wL-Gs4" firstAttribute="top" secondItem="A3S-PA-NtX" secondAttribute="bottom" constant="12" id="Z6S-Vs-vOQ"/>
                 <constraint firstItem="Qxt-wL-Gs4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cW1-Zf-CA4"/>
-                <constraint firstItem="zNF-JN-txD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gPA-Qm-i7e"/>
+                <constraint firstItem="zNF-JN-txD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="1" id="gPA-Qm-i7e"/>
                 <constraint firstItem="A3S-PA-NtX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="k2R-yS-aK5"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
