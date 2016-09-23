@@ -35,7 +35,7 @@
                         <constraint firstAttribute="height" constant="34" id="uBU-vr-X8j"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="37"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wlu-2t-TJV">
@@ -63,6 +63,7 @@
                 <constraint firstItem="fWq-bc-qMn" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="usP-2l-KgJ"/>
             </constraints>
             <connections>
+                <outlet property="labelLeadingConstraint" destination="tya-Tf-7sX" id="dpy-7n-aFf"/>
                 <outlet property="radioLabel" destination="bYk-tb-eoa" id="fTM-yb-Nhm"/>
             </connections>
             <point key="canvasLocation" x="216.5" y="207.5"/>

@@ -15,6 +15,8 @@ class RadioViewController: UIViewController,UIPageViewControllerDataSource {
     var controllersArray: Array<UIViewController>?
     var radioPageViewController:UIPageViewController?
     var optionArray = ["Genero","Favorite","Ciudad","Programas"]
+    
+    var selectedRowIndexPath : NSIndexPath?
 
     
     override func viewDidLoad() {
@@ -25,7 +27,7 @@ class RadioViewController: UIViewController,UIPageViewControllerDataSource {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "radioItemTapped:", name: "radioItemTapped", object: nil)
 
 
-        
+        selectedRowIndexPath = NSIndexPath(forRow: 0,inSection: 0)
         controllersArray = Array()
 
         // Do any additional setup after loading the view.
@@ -125,18 +127,55 @@ class RadioViewController: UIViewController,UIPageViewControllerDataSource {
             
             cell.optionLabel.text = optionArray[indexPath.row]
             
+            if selectedRowIndexPath == indexPath {
+                cell.optionLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
+
+            } else {
+                cell.optionLabel.font = UIFont(name:"HelveticaNeue-Regular", size: 16.0)
+
+            }
+            
             return cell
         }
         
         func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
         {
-            return CGSizeMake(self.view.frame.width/4 - 18,50)
+//            if indexPath.row == 3 {
+//                return CGSizeMake(self.view.frame.width * 0.22 ,50)
+//
+//            } else {
+//                return CGSizeMake(self.view.frame.width * 0.20 ,50)
+//
+//            }
+            
+            return CGSizeMake(self.view.frame.width * 0.23 ,50)
+
             
         }
+        
+        func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+            
+            return UIEdgeInsetsMake(0, 5, 0, 5)
+        }
+        
+        
+        
+//        func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+//            
+//            return UIEdgeInsetsMake(0, (self.view.frame.width * 0.06)/4, (self.view.frame.width * 0.08)/4, 0)
+//        }
         
         func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
             
             self.scrollToViewController(index: indexPath.row)
+//            let cell = collectionView.cellForItemAtIndexPath(indexPath) as! RadioCollectionViewCell
+//            
+//           // cell.optionLabel.t
+//            cell.optionLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 16.0)
+            
+            selectedRowIndexPath = indexPath
+            collectionView.reloadData()
+
         }
 
         
@@ -154,18 +193,13 @@ class RadioViewController: UIViewController,UIPageViewControllerDataSource {
         
         func searchBarTapped(notification:NSNotification)
         {
-            print("notification fired")
-            
             let searchViewController = SearchViewController(nibName: "SearchViewController", bundle: nil)
-            self.navigationController?.pushViewController(searchViewController, animated: true)
+            self.navigationController?.pushViewController(searchViewController, animated: false)
         }
-        
         
         
         func radioItemTapped(notification:NSNotification)
         {
-            print("notification fired")
-            
             let audioController = AudioPlayerViewController(nibName: "AudioPlayerViewController", bundle: nil)
             self.navigationController?.pushViewController(audioController, animated: true)
         }

@@ -15,6 +15,7 @@ protocol GeneroCollectionViewTopHeaderViewDelegate {
 
 class GeneroCollectionViewTopHeaderView: UICollectionReusableView {
     
+    @IBOutlet weak var labelLeadingConstraint: NSLayoutConstraint!
     var delegate:GeneroCollectionViewTopHeaderViewDelegate?
 
     @IBOutlet weak var radioLabel: UILabel!
@@ -22,7 +23,14 @@ class GeneroCollectionViewTopHeaderView: UICollectionReusableView {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.configureView()
         
+    }
+    
+    func configureView() {
+        let leadingEdge = (self.frame.width * 0.10)/4
+        
+        labelLeadingConstraint.constant = leadingEdge + 1
     }
     
     func applyTheme(){

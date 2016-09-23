@@ -6,12 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "estaciones_2X.png",
+      "filename" : "estaciones_50x50@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "estaciones_3X.png",
+      "filename" : "estaciones_75x75@3x.png",
       "scale" : "3x"
     }
   ],

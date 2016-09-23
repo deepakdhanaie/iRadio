@@ -22,6 +22,13 @@ class AudioPlayerViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.tabBarController?.tabBar.hidden = true
+        
+        let view = UIView(frame:
+            CGRect(x: 0.0, y: 0.0, width: UIScreen.mainScreen().bounds.size.width, height: 20.0)
+        )
+          view.backgroundColor = UIColor(red: 224/256.0, green: 50/256.0, blue: 31/256.0, alpha: 1.0)
+        
+        self.view.addSubview(view)
     }
 
     override func didReceiveMemoryWarning() {
@@ -82,9 +89,16 @@ class AudioPlayerViewController: UIViewController {
         //                UIActivityTypePostToVimeo,UIActivityTypePostToTwitter,UIActivityTypePostToFacebook]
         
         self.presentViewController(activityViewController, animated: true, completion: nil)
-        
+         
     }
     
+    
+    
+    @IBAction func addSongButtonTapped(sender: AnyObject) {
+        let radioStationProfileViewController = RadioStationProfileViewController(nibName: "RadioStationProfileViewController", bundle: nil)
+        self.navigationController?.pushViewController(radioStationProfileViewController, animated: true)
+
+    }
 
     
 

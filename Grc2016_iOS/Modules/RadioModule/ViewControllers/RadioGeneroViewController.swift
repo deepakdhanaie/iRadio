@@ -118,7 +118,7 @@ extension RadioGeneroViewController: UICollectionViewDelegate, UICollectionViewD
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
         
-        return UIEdgeInsetsMake(5, 2, 2, 5)
+        return UIEdgeInsetsMake(5, (self.view.frame.width * 0.10)/4, (self.view.frame.width * 0.10)/4, 10)
     }
     
     
