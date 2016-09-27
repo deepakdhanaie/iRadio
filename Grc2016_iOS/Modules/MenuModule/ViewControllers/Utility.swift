@@ -19,4 +19,53 @@ class Utility: NSObject {
             NSForegroundColorAttributeName : titleColor]
     }
     
+    
+    
+    class func showBottomView(isTabBar:Bool) {
+        
+         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        if(appDelegate.window?.viewWithTag(1000) == nil){
+            let nib:NSArray=NSBundle.mainBundle().loadNibNamed("PlayerMiniView", owner: self, options: nil)
+            
+            let miniView = nib.objectAtIndex(0) as? PlayerMiniView
+            miniView?.tag = 1000
+            var distanceFromBottom = SCREENSIZE.height - 64
+            
+            if(isTabBar){
+                distanceFromBottom =    distanceFromBottom - CGFloat(TABBARHEIGHT)
+            }
+            
+            miniView?.frame = CGRectMake(0,distanceFromBottom,SCREENSIZE.width,64)
+            appDelegate.window!.addSubview(miniView!)
+            
+        }
+        else{
+         let bottomPlayer =  appDelegate.window?.viewWithTag(1000)
+            var distanceFromBottom = SCREENSIZE.height - 64
+            if(isTabBar){
+                distanceFromBottom =    distanceFromBottom - CGFloat(TABBARHEIGHT)
+            }
+        
+          bottomPlayer?.frame =  CGRectMake(0,distanceFromBottom,SCREENSIZE.width,64)
+        }
+    }
+    
+    
+    
+    class func hideBottomBar() {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+         if((appDelegate.window?.viewWithTag(1000)) != nil){
+            appDelegate.window!.viewWithTag(1000)?.removeFromSuperview()
+        }
+        
+        
+        
+        
+    }
+    
+    
+    
+    
+    
 }

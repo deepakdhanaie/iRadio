@@ -9,6 +9,18 @@
 import Foundation
 import UIKit
 
+
+
+//***********************************************************************
+// MARK:
+// MARK: - Screen Related
+// MARK:
+//***********************************************************************
+
+let SCREENSIZE: CGRect = UIScreen.mainScreen().bounds
+
+let TABBARHEIGHT  = 49
+
 struct Constants {
 // MARK: - Api URLs
     

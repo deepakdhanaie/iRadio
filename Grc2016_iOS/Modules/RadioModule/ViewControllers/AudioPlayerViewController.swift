@@ -41,19 +41,8 @@ class AudioPlayerViewController: UIViewController {
     }
     
     @IBAction func backButtonTapped(sender: AnyObject) {
-        
-        let nib:NSArray=NSBundle.mainBundle().loadNibNamed("PlayerMiniView", owner: self, options: nil)
-        
-        let miniView = nib.objectAtIndex(0) as? PlayerMiniView
-        
-        
-        miniView?.frame = CGRectMake(0,self.view.frame.height - 118,self.view.frame.size.width,64)
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-       appDelegate.window!.addSubview(miniView!)
+        Utility.showBottomView(true)
         self.dismissViewControllerAnimated(true, completion: nil)
-
-        
-
     }
 
     @IBAction func shareButtonTapped(sender: AnyObject) {
