@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="Grc2016_iOS" customModuleProvider="target">
             <connections>
+                <outlet property="searchBar" destination="HIL-GG-vym" id="J4Q-AO-JpB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -13,7 +15,32 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HIL-GG-vym">
+                    <rect key="frame" x="8" y="20" width="584" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="d2k-xy-gAM"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="rWA-ek-aY7"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="65B-RB-cA5">
+                    <rect key="frame" x="0.0" y="73" width="600" height="527"/>
+                    <color key="backgroundColor" red="0.98431372549019602" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.98431372549019602" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="65B-RB-cA5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9td-OG-wcB"/>
+                <constraint firstAttribute="trailing" secondItem="65B-RB-cA5" secondAttribute="trailing" id="Kvj-hC-4gc"/>
+                <constraint firstItem="HIL-GG-vym" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="LLj-M0-YXV"/>
+                <constraint firstItem="65B-RB-cA5" firstAttribute="top" secondItem="HIL-GG-vym" secondAttribute="bottom" constant="9" id="Nh1-33-VPt"/>
+                <constraint firstAttribute="bottom" secondItem="65B-RB-cA5" secondAttribute="bottom" id="QNn-76-j6E"/>
+                <constraint firstItem="HIL-GG-vym" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="chB-y9-8af"/>
+                <constraint firstAttribute="trailing" secondItem="HIL-GG-vym" secondAttribute="trailing" constant="8" id="tAp-Cs-SU1"/>
+            </constraints>
         </view>
     </objects>
 </document>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1912" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateAccountViewController" customModule="Grc2016_iOS" customModuleProvider="target">
@@ -104,11 +104,32 @@
                         <action selector="omitirButtonTapped:" destination="-1" eventType="touchUpInside" id="Cok-uM-4KQ"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kwh-Rz-zia">
-                    <rect key="frame" x="75" y="447" width="170" height="86"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GRC" translatesAutoresizingMaskIntoConstraints="NO" id="Kwh-Rz-zia">
+                    <rect key="frame" x="75" y="470" width="170" height="63"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="170" id="BNw-gv-boE"/>
-                        <constraint firstAttribute="height" constant="86" id="V2l-kc-7Ve"/>
+                        <constraint firstAttribute="height" constant="63" id="V2l-kc-7Ve"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FacebookIcon" translatesAutoresizingMaskIntoConstraints="NO" id="o6c-NN-cqV">
+                    <rect key="frame" x="78" y="177" width="36" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="Unl-ma-CJQ"/>
+                        <constraint firstAttribute="height" constant="45" id="zcq-Y4-Sgg"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TwitterIcon" translatesAutoresizingMaskIntoConstraints="NO" id="7Yf-PW-VAm">
+                    <rect key="frame" x="78" y="245" width="36" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="7Hj-eU-DyC"/>
+                        <constraint firstAttribute="height" constant="45" id="HS5-0y-mxJ"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GPlusIcon" translatesAutoresizingMaskIntoConstraints="NO" id="wTp-bI-uFX">
+                    <rect key="frame" x="78" y="314" width="36" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="UGz-hq-cZo"/>
+                        <constraint firstAttribute="width" constant="36" id="pmf-qb-J5f"/>
                     </constraints>
                 </imageView>
             </subviews>
@@ -117,19 +138,32 @@
                 <constraint firstItem="agN-U5-Fh5" firstAttribute="top" secondItem="ucU-cd-PPu" secondAttribute="bottom" constant="18" id="6GM-Ct-AZN"/>
                 <constraint firstItem="zNF-JN-txD" firstAttribute="top" secondItem="Qxt-wL-Gs4" secondAttribute="bottom" constant="41" id="8a6-id-LhB"/>
                 <constraint firstItem="agN-U5-Fh5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="1" id="Anv-CN-HgQ"/>
+                <constraint firstItem="7Yf-PW-VAm" firstAttribute="centerY" secondItem="5Ui-0W-DbY" secondAttribute="centerY" constant="-1" id="CDd-DX-0hr"/>
                 <constraint firstItem="ucU-cd-PPu" firstAttribute="top" secondItem="5Ui-0W-DbY" secondAttribute="bottom" constant="18" id="Df2-Gl-q3M"/>
-                <constraint firstItem="Kwh-Rz-zia" firstAttribute="top" secondItem="agN-U5-Fh5" secondAttribute="bottom" constant="15" id="H4f-R2-II1"/>
+                <constraint firstItem="Kwh-Rz-zia" firstAttribute="top" secondItem="agN-U5-Fh5" secondAttribute="bottom" constant="38" id="H4f-R2-II1"/>
                 <constraint firstItem="ucU-cd-PPu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="1" id="IYb-Np-KS0"/>
                 <constraint firstItem="5Ui-0W-DbY" firstAttribute="top" secondItem="zNF-JN-txD" secondAttribute="bottom" constant="18" id="Ib0-NY-io9"/>
                 <constraint firstItem="5Ui-0W-DbY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="1" id="K9G-xq-Yn1"/>
                 <constraint firstItem="Kwh-Rz-zia" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KkY-Y3-UOe"/>
                 <constraint firstItem="A3S-PA-NtX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="35" id="MKq-Et-TRx"/>
+                <constraint firstItem="7Yf-PW-VAm" firstAttribute="centerX" secondItem="5Ui-0W-DbY" secondAttribute="centerX" constant="-65" id="Qjv-h9-TEs"/>
+                <constraint firstItem="wTp-bI-uFX" firstAttribute="centerX" secondItem="ucU-cd-PPu" secondAttribute="centerX" constant="-65" id="Skv-VE-kpv"/>
+                <constraint firstItem="wTp-bI-uFX" firstAttribute="centerY" secondItem="ucU-cd-PPu" secondAttribute="centerY" constant="-1" id="WTd-bk-gvc"/>
                 <constraint firstItem="Qxt-wL-Gs4" firstAttribute="top" secondItem="A3S-PA-NtX" secondAttribute="bottom" constant="12" id="Z6S-Vs-vOQ"/>
                 <constraint firstItem="Qxt-wL-Gs4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cW1-Zf-CA4"/>
                 <constraint firstItem="zNF-JN-txD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="1" id="gPA-Qm-i7e"/>
+                <constraint firstItem="o6c-NN-cqV" firstAttribute="centerY" secondItem="zNF-JN-txD" secondAttribute="centerY" id="giX-og-CtA"/>
                 <constraint firstItem="A3S-PA-NtX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="k2R-yS-aK5"/>
+                <constraint firstItem="o6c-NN-cqV" firstAttribute="centerX" secondItem="zNF-JN-txD" secondAttribute="centerX" constant="-65" id="nX2-Pu-aAq"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="227" y="129"/>
         </view>
     </objects>
+    <resources>
+        <image name="FacebookIcon" width="59" height="83"/>
+        <image name="GPlusIcon" width="92" height="83"/>
+        <image name="GRC" width="723" height="310"/>
+        <image name="TwitterIcon" width="92" height="83"/>
+    </resources>
 </document>
