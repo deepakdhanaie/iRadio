@@ -201,7 +201,7 @@ class RadioViewController: UIViewController,UIPageViewControllerDataSource {
         func radioItemTapped(notification:NSNotification)
         {
             let audioController = AudioPlayerViewController(nibName: "AudioPlayerViewController", bundle: nil)
-            self.navigationController?.pushViewController(audioController, animated: true)
+            self.presentViewController(audioController, animated: true, completion: nil)
         }
     
 }
