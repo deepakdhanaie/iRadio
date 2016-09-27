@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1912" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -12,10 +12,18 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nSD-aR-tX7">
-                    <rect key="frame" x="0.0" y="122" width="315" height="233"/>
+                    <rect key="frame" x="18" y="125" width="279" height="290"/>
                     <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="113" placeholderIntrinsicHeight="85" image="TickIcon" translatesAutoresizingMaskIntoConstraints="NO" id="IG0-uX-9v9">
+                            <rect key="frame" x="84" y="43" width="113" height="86"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="86" id="SGi-MP-MO3"/>
+                                <constraint firstAttribute="width" constant="113" id="m4f-Rp-BVM"/>
+                            </constraints>
+                        </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Te has suscrito a esta estacion para recibir notificaciones" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ktt-EZ-si0">
-                            <rect key="frame" x="51" y="157" width="214" height="76"/>
+                            <rect key="frame" x="33" y="139" width="214" height="76"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="214" id="AGu-cd-HaJ"/>
                                 <constraint firstAttribute="height" constant="76" id="jnU-8m-jbB"/>
@@ -24,30 +32,22 @@
                             <color key="textColor" red="0.45882352941176469" green="0.46274509803921571" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IG0-uX-9v9">
-                            <rect key="frame" x="115" y="0.0" width="86" height="113"/>
-                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="113" id="SGi-MP-MO3"/>
-                                <constraint firstAttribute="width" constant="86" id="m4f-Rp-BVM"/>
-                            </constraints>
-                        </imageView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="233" id="1ji-mW-4fH"/>
+                        <constraint firstAttribute="height" constant="290" id="1ji-mW-4fH"/>
                         <constraint firstItem="Ktt-EZ-si0" firstAttribute="centerX" secondItem="nSD-aR-tX7" secondAttribute="centerX" id="4GQ-fF-wRJ"/>
-                        <constraint firstAttribute="width" constant="315" id="iSu-5S-HG5"/>
-                        <constraint firstItem="IG0-uX-9v9" firstAttribute="top" secondItem="nSD-aR-tX7" secondAttribute="top" id="mQk-uy-if9"/>
-                        <constraint firstItem="IG0-uX-9v9" firstAttribute="centerX" secondItem="nSD-aR-tX7" secondAttribute="centerX" id="n8q-A0-IDn"/>
-                        <constraint firstItem="Ktt-EZ-si0" firstAttribute="top" secondItem="IG0-uX-9v9" secondAttribute="bottom" constant="44" id="zqK-TS-WXb"/>
+                        <constraint firstAttribute="width" constant="279" id="iSu-5S-HG5"/>
+                        <constraint firstItem="IG0-uX-9v9" firstAttribute="top" secondItem="nSD-aR-tX7" secondAttribute="top" constant="43" id="mQk-uy-if9"/>
+                        <constraint firstItem="IG0-uX-9v9" firstAttribute="centerX" secondItem="nSD-aR-tX7" secondAttribute="centerX" constant="1" id="n8q-A0-IDn"/>
+                        <constraint firstItem="Ktt-EZ-si0" firstAttribute="top" secondItem="IG0-uX-9v9" secondAttribute="bottom" constant="10" id="zqK-TS-WXb"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="nSD-aR-tX7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="72e-gG-tfH"/>
-                <constraint firstItem="nSD-aR-tX7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="sBq-Ud-XAR"/>
+                <constraint firstItem="nSD-aR-tX7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="31.5" id="sBq-Ud-XAR"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
@@ -58,4 +58,7 @@
             <point key="canvasLocation" x="411.5" y="296.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="TickIcon" width="113" height="86"/>
+    </resources>
 </document>

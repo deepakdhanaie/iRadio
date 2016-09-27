@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1912" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -16,18 +16,18 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMc-kw-ksQ">
-                    <rect key="frame" x="158" y="26" width="35" height="28"/>
+                    <rect key="frame" x="191" y="26" width="35" height="28"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="35" id="3CT-cT-zpm"/>
                         <constraint firstAttribute="height" constant="28" id="Csc-M4-j9q"/>
                     </constraints>
-                    <state key="normal" image="favourite"/>
+                    <state key="normal" image="subscription"/>
                     <connections>
                         <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="6eo-Vh-hcd"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svX-Rb-Or7">
-                    <rect key="frame" x="212" y="26" width="37" height="28"/>
+                    <rect key="frame" x="226" y="26" width="37" height="28"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="28" id="TT6-dU-l0n"/>
                         <constraint firstAttribute="width" constant="37" id="kMZ-fB-LPN"/>
@@ -69,8 +69,8 @@
                 <constraint firstItem="RXy-4p-gwM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KnA-tz-UBl"/>
                 <constraint firstItem="lYV-4k-teI" firstAttribute="top" secondItem="RXy-4p-gwM" secondAttribute="bottom" id="Ods-Ta-Id0"/>
                 <constraint firstItem="svX-Rb-Or7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="26" id="dk3-rI-KLU"/>
-                <constraint firstItem="svX-Rb-Or7" firstAttribute="leading" secondItem="nMc-kw-ksQ" secondAttribute="trailing" constant="19" id="i9Y-TM-TRe"/>
-                <constraint firstItem="HMe-2P-QTT" firstAttribute="leading" secondItem="svX-Rb-Or7" secondAttribute="trailing" constant="15" id="n18-CC-Wu7"/>
+                <constraint firstItem="svX-Rb-Or7" firstAttribute="leading" secondItem="nMc-kw-ksQ" secondAttribute="trailing" id="i9Y-TM-TRe"/>
+                <constraint firstItem="HMe-2P-QTT" firstAttribute="leading" secondItem="svX-Rb-Or7" secondAttribute="trailing" constant="1" id="n18-CC-Wu7"/>
                 <constraint firstItem="RXy-4p-gwM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="no8-of-9y9"/>
                 <constraint firstItem="HMe-2P-QTT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="26" id="tax-Do-5e8"/>
                 <constraint firstAttribute="bottom" secondItem="lYV-4k-teI" secondAttribute="bottom" id="yYU-LE-s6c"/>
@@ -87,9 +87,9 @@
         </view>
     </objects>
     <resources>
-        <image name="favourite" width="30" height="25"/>
         <image name="headerImage" width="320" height="182"/>
         <image name="like" width="21" height="18"/>
-        <image name="sharingIcon" width="30" height="25"/>
+        <image name="sharingIcon" width="25" height="22"/>
+        <image name="subscription" width="25" height="28"/>
     </resources>
 </document>

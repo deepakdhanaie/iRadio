@@ -18,15 +18,14 @@ class CustomAlertView: UIView,UIGestureRecognizerDelegate {
     
     
     override func awakeFromNib() {
-        self.baseView!.backgroundColor = UIColor.clearColor()
+        self.baseView!.backgroundColor = UIColor.whiteColor()
         let blackColor = UIColor.blackColor()
         self.backgroundColor = blackColor.colorWithAlphaComponent(0.7)
     }
     
     func configureView(message: String) {
         messageLabel.text = message
-        tickMarkImageView.image = UIImage(named: "")
-        
+    
         let tap = UITapGestureRecognizer(target: self, action: Selector("handleTap:"))
         tap.delegate = self
         self.userInteractionEnabled = true
