@@ -65,33 +65,51 @@ class CreateAccountViewController: UIViewController {
         tabBarController.viewControllers = controllers
         
         let radioTabBarIconImage = UIImage(named: "Estaciones")
+        let radioTabBarIconSelectedImage = UIImage(named: "EstacionesSelected")
         let onDemandTabBarIconImage = UIImage(named: "Ondemand")
+        let onDemandTabBarIconSelectedImage = UIImage(named: "OndemandSelected")
         let enterateTabBarIconImage = UIImage(named: "Personalizar")
+        let enterateTabBarIconSelectedImage = UIImage(named: "PersonalizarSelected")
         let destertadorTabBarIconImage = UIImage(named: "Despertador")
+        let destertadorTabBarIconSelectedImage = UIImage(named: "DespertadorSelected")
         let ajusteTabBarIconImage = UIImage(named: "Enterate")
+         let ajusteTabBarIconSelectedImage = UIImage(named: "EnterateSelected")
         
         
         radioViewController.tabBarItem = UITabBarItem(
             title: "",
             image: radioTabBarIconImage,
             tag: 1)
+        radioViewController.tabBarItem.selectedImage = radioTabBarIconSelectedImage?.imageWithRenderingMode(.AlwaysOriginal)
+        
+        
         onDemandViewController.tabBarItem = UITabBarItem(
             title: "",
             image: onDemandTabBarIconImage,
             tag:2)
+        
+        onDemandViewController.tabBarItem.selectedImage = onDemandTabBarIconSelectedImage?.imageWithRenderingMode(.AlwaysOriginal)
+        
         enterateViewController.tabBarItem = UITabBarItem(
             title: "",
             image: enterateTabBarIconImage,
             tag:2)
+        
+        enterateViewController.tabBarItem.selectedImage = enterateTabBarIconSelectedImage?.imageWithRenderingMode(.AlwaysOriginal)
+        
         destertadorViewController.tabBarItem = UITabBarItem(
             title: "",
             image: destertadorTabBarIconImage,
             tag:2)
+        
+        destertadorViewController.tabBarItem.selectedImage = destertadorTabBarIconSelectedImage?.imageWithRenderingMode(.AlwaysOriginal)
+        
         ajusteViewController.tabBarItem = UITabBarItem(
             title: "",
             image: ajusteTabBarIconImage,
             tag:2)
         
+        ajusteViewController.tabBarItem.selectedImage = ajusteTabBarIconSelectedImage?.imageWithRenderingMode(.AlwaysOriginal)
         
         let menuViewController = MenuViewController(nibName: "MenuViewController", bundle: nil)
         let menuNavigationViewController = UINavigationController(rootViewController: menuViewController)

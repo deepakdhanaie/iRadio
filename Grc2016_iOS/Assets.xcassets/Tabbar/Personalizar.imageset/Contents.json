@@ -6,12 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "personalizar_50x50@2x.png",
+      "filename" : "personalize_50x50.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "personalizar_75x75@3x.png",
+      "filename" : "personalize_75x75.png",
       "scale" : "3x"
     }
   ],
