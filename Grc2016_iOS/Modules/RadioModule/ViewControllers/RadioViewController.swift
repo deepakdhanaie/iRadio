@@ -17,6 +17,7 @@ class RadioViewController: UIViewController,UIPageViewControllerDataSource {
     var optionArray = ["Genero","Favorite","Ciudad","Programas"]
     
     var selectedRowIndexPath : NSIndexPath?
+    var previousIndexPath : NSIndexPath?
 
     
     override func viewDidLoad() {
@@ -140,17 +141,7 @@ class RadioViewController: UIViewController,UIPageViewControllerDataSource {
         
         func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
         {
-//            if indexPath.row == 3 {
-//                return CGSizeMake(self.view.frame.width * 0.22 ,50)
-//
-//            } else {
-//                return CGSizeMake(self.view.frame.width * 0.20 ,50)
-//
-//            }
-            
             return CGSizeMake(self.view.frame.width * 0.23 ,50)
-
-            
         }
         
         func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
@@ -158,34 +149,25 @@ class RadioViewController: UIViewController,UIPageViewControllerDataSource {
             return UIEdgeInsetsMake(0, 5, 0, 5)
         }
         
-        
-        
-//        func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-//            
-//            return UIEdgeInsetsMake(0, (self.view.frame.width * 0.06)/4, (self.view.frame.width * 0.08)/4, 0)
-//        }
-        
         func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-            
-            self.scrollToViewController(index: indexPath.row)
-//            let cell = collectionView.cellForItemAtIndexPath(indexPath) as! RadioCollectionViewCell
-//            
-//           // cell.optionLabel.t
-//            cell.optionLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 16.0)
-            
+            previousIndexPath = selectedRowIndexPath
             selectedRowIndexPath = indexPath
+            if previousIndexPath?.row > selectedRowIndexPath?.row {
+                self.scrollToViewController(index: indexPath.row, direction: .Reverse)
+
+            } else {
+                self.scrollToViewController(index: indexPath.row , direction: .Forward)
+            }
+
             collectionView.reloadData()
 
         }
 
         
-        func scrollToViewController(index newIndex: Int) {
+        func scrollToViewController(index newIndex: Int ,direction: UIPageViewControllerNavigationDirection) {
             if let firstViewController = controllersArray?.first,
-                let currentIndex = controllersArray!.indexOf(firstViewController) {
-                let direction: UIPageViewControllerNavigationDirection = newIndex >= currentIndex ? .Forward : .Reverse
+                let _ = controllersArray!.indexOf(firstViewController) {
                 let nextViewController = controllersArray![newIndex]
-                //scrollToViewController(nextViewController, direction: direction)
-                
                  radioPageViewController?.setViewControllers([nextViewController], direction: direction, animated: true, completion: nil)
             }
         }
