@@ -792,7 +792,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: GRC COMUNICACIONES SA DE CV (B323V55Y2F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: GRC COMUNICACIONES SA DE CV (B323V55Y2F)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -814,6 +815,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "588b22b8-1b7c-455b-9da0-dbceca521bc9";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -838,7 +840,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: GRC COMUNICACIONES SA DE CV (B323V55Y2F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: GRC COMUNICACIONES SA DE CV (B323V55Y2F)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -853,6 +856,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "588b22b8-1b7c-455b-9da0-dbceca521bc9";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -863,11 +867,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: GRC COMUNICACIONES SA DE CV (B323V55Y2F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: GRC COMUNICACIONES SA DE CV (B323V55Y2F)";
 				INFOPLIST_FILE = Grc2016_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.intelligrape.Grc2016-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.universalapp.radiocentro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "588b22b8-1b7c-455b-9da0-dbceca521bc9";
 			};
 			name = Debug;
 		};
@@ -875,11 +882,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: GRC COMUNICACIONES SA DE CV (B323V55Y2F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: GRC COMUNICACIONES SA DE CV (B323V55Y2F)";
 				INFOPLIST_FILE = Grc2016_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.intelligrape.Grc2016-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.universalapp.radiocentro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "588b22b8-1b7c-455b-9da0-dbceca521bc9";
 			};
 			name = Release;
 		};
@@ -887,10 +897,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: GRC COMUNICACIONES SA DE CV (B323V55Y2F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: GRC COMUNICACIONES SA DE CV (B323V55Y2F)";
 				INFOPLIST_FILE = Grc2016_iOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.intelligrape.Grc2016-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "588b22b8-1b7c-455b-9da0-dbceca521bc9";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Grc2016_iOS.app/Grc2016_iOS";
 			};
 			name = Debug;
@@ -899,10 +912,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: GRC COMUNICACIONES SA DE CV (B323V55Y2F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: GRC COMUNICACIONES SA DE CV (B323V55Y2F)";
 				INFOPLIST_FILE = Grc2016_iOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.intelligrape.Grc2016-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "588b22b8-1b7c-455b-9da0-dbceca521bc9";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Grc2016_iOS.app/Grc2016_iOS";
 			};
 			name = Release;
@@ -910,10 +926,13 @@
 		4A33B0841D82B64D00CC29B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: GRC COMUNICACIONES SA DE CV (B323V55Y2F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: GRC COMUNICACIONES SA DE CV (B323V55Y2F)";
 				INFOPLIST_FILE = Grc2016_iOSUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.intelligrape.Grc2016-iOSUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "588b22b8-1b7c-455b-9da0-dbceca521bc9";
 				TEST_TARGET_NAME = Grc2016_iOS;
 			};
 			name = Debug;
@@ -921,10 +940,13 @@
 		4A33B0851D82B64D00CC29B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: GRC COMUNICACIONES SA DE CV (B323V55Y2F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: GRC COMUNICACIONES SA DE CV (B323V55Y2F)";
 				INFOPLIST_FILE = Grc2016_iOSUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.intelligrape.Grc2016-iOSUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "588b22b8-1b7c-455b-9da0-dbceca521bc9";
 				TEST_TARGET_NAME = Grc2016_iOS;
 			};
 			name = Release;

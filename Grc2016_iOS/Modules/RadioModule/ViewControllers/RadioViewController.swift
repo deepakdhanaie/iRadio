@@ -22,9 +22,9 @@ class RadioViewController: UIViewController,UIPageViewControllerDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "searchBarTapped:", name: "searchBarTapped", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(RadioViewController.searchBarTapped(_:)), name: "searchBarTapped", object: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "radioItemTapped:", name: "radioItemTapped", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(RadioViewController.radioItemTapped(_:)), name: "radioItemTapped", object: nil)
 
 
         selectedRowIndexPath = NSIndexPath(forRow: 0,inSection: 0)
@@ -128,10 +128,10 @@ class RadioViewController: UIViewController,UIPageViewControllerDataSource {
             cell.optionLabel.text = optionArray[indexPath.row]
             
             if selectedRowIndexPath == indexPath {
-                cell.optionLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
+                cell.optionLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 15.0)
 
             } else {
-                cell.optionLabel.font = UIFont(name:"HelveticaNeue-Regular", size: 16.0)
+                cell.optionLabel.font = UIFont(name:"HelveticaNeue-Regular", size: 15.0)
 
             }
             
