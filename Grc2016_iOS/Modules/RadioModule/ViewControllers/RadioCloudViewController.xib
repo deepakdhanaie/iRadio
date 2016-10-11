@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="last controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhh-9Y-SDR">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhh-9Y-SDR">
                     <rect key="frame" x="149" y="290" width="303" height="21"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="303" id="eKt-sQ-oZt"/>
@@ -26,7 +26,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.1135055173" green="0.64019097219999999" blue="0.1343090884" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Hhh-9Y-SDR" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="1Bo-hq-krh"/>
                 <constraint firstItem="Hhh-9Y-SDR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KrY-kD-AMn"/>
