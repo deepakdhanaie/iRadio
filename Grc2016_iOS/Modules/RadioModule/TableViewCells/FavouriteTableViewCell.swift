@@ -43,7 +43,7 @@ class FavouriteTableViewCell: UITableViewCell {
          extraInfoButton?.hidden = true
         
         if(isEditing){
-           extraInfoButton?.hidden = false
+           //extraInfoButton?.hidden = false
         }
         
     }

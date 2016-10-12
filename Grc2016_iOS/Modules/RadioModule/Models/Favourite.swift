@@ -15,12 +15,11 @@ class Favourite: NSObject {
     var albumIcon : String
 
     
-    init(responseDictionary: [String:AnyObject]) {
+    init(responseDictionary: [String : AnyObject]) {
     
             self.singerName = responseDictionary ["singerName"] as! String
             self.albumName =  responseDictionary ["albumName"]  as! String
-            self.albumIcon =  responseDictionary ["albumIcon"] as! String
-        
+            self.albumIcon =  ""
         
         
         

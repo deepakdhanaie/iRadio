@@ -15,12 +15,11 @@ class RadioFavoriteViewController: UIViewController,UIActionSheetDelegate {
     
     var headerView : HeaderView?
     
-    let favouriteArray = [Favourite]()
+    var sectionArray = [AnyObject]()
     
     var editButton : UIButton?
     
     var isEditFirst : Bool?
-    
     
     
 
@@ -35,7 +34,20 @@ class RadioFavoriteViewController: UIViewController,UIActionSheetDelegate {
         favouriteTableView?.tableHeaderView = headerView
         isEditFirst = true
         
+        self.configureArray()
         //self.setupConstraints()
+    }
+    
+    
+    func configureArray(){
+    
+        for var i = 1; i<=5; i++ {
+            let responsedictionary =   Utility.configureRadioData()
+            let favuorite = Favourite(responseDictionary:responsedictionary as! [String : AnyObject])
+            sectionArray.append(favuorite)
+        }
+    
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,7 +65,7 @@ class RadioFavoriteViewController: UIViewController,UIActionSheetDelegate {
         
         print(headerView?.frame)
         
-         headerView?.frame = CGRectMake(0,0,self.view.frame.size.width,262)
+         headerView?.frame = CGRectMake(0,0,self.view.frame.size.width,153)
         
         self.favouriteTableView?.tableHeaderView = headerView
         
@@ -68,10 +80,15 @@ class RadioFavoriteViewController: UIViewController,UIActionSheetDelegate {
     // MARK:
     //***********************************************************************
     
+     func numberOfSectionsInTableView(tableView: UITableView) -> Int{
+        
+         return 2
+    }
+
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return 10// favouriteArray.count
+        return 5
     }
     
     
@@ -94,7 +111,37 @@ class RadioFavoriteViewController: UIViewController,UIActionSheetDelegate {
     }
     
     
+
     
+    // Override to support rearranging the table view.
+     func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
+        
+        let itemToMove = sectionArray[fromIndexPath.row]
+        sectionArray.removeAtIndex(fromIndexPath.row)
+        sectionArray.insert(itemToMove, atIndex: toIndexPath.row)
+    }
+    
+
+    
+    func tableView(tableView: UITableView, targetIndexPathForMoveFromRowAtIndexPath sourceIndexPath: NSIndexPath, toProposedIndexPath proposedDestinationIndexPath: NSIndexPath) -> NSIndexPath{
+        
+        if(sourceIndexPath.section != proposedDestinationIndexPath.section){
+            var row = 0
+            if(sourceIndexPath.section < proposedDestinationIndexPath.section){
+                row = tableView.numberOfRowsInSection(sourceIndexPath.section)-1
+            }
+            
+            return NSIndexPath(forRow: row, inSection: sourceIndexPath.section)
+        }
+        return proposedDestinationIndexPath
+        
+    }
+    
+    
+    // Override to support conditional rearranging of the table view.
+     func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true;
+    }
     
     
     
@@ -123,15 +170,18 @@ class RadioFavoriteViewController: UIViewController,UIActionSheetDelegate {
         
         titlelabel.font = UIFont(name: "HelveticaNeue-Medium", size: 16.0)
         
-        titlelabel.text = "Radio"
-        
+        if(section == 0){
+           titlelabel.text = "Radio"
+        }
+        else{
+           titlelabel.text = "On-Demand"
+        }
+    
         tempView.addSubview(titlelabel)
-        
-        
 
         
         if(isEditFirst == true){
-            editButton = UIButton(frame: CGRectMake(self.view.frame.size.width - (50 + 15), 15,50, 16))
+            editButton = UIButton(frame: CGRectMake(self.view.frame.size.width - (40 + 15), 15,50, 16))
             editButton!.setTitle("Editor", forState: .Normal)
             isEditFirst = false
         }
@@ -142,8 +192,9 @@ class RadioFavoriteViewController: UIViewController,UIActionSheetDelegate {
         editButton!.setTitleColor(UIColor(red:206.0/255.0, green:206.0/255.0, blue:206.0/255.0, alpha: 1.0), forState: .Normal)
         
         editButton!.addTarget(self, action: "editSongList", forControlEvents: .TouchUpInside)
-        
+        if( section == 0){
         tempView.addSubview(editButton!)
+        }
         
     
         return tempView
@@ -169,7 +220,7 @@ class RadioFavoriteViewController: UIViewController,UIActionSheetDelegate {
         
     }
     
-    
+
     
     func editSongList(){
         

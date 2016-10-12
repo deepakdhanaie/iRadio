@@ -64,6 +64,19 @@ class Utility: NSObject {
         
     }
     
+    class func configureRadioData() -> NSDictionary{
+        
+        let requestDict = NSMutableDictionary()
+        
+        requestDict.setObject("Bryan Adams", forKey: "singerName")
+        requestDict.setObject("Cloud No 9.", forKey: "albumName")
+      
+        
+        return requestDict
+        
+    }
+
+    
     
     
     

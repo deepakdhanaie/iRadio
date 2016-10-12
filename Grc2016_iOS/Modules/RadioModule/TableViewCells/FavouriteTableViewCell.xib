@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1912" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -23,8 +23,9 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybW-AK-qXB">
-                        <rect key="frame" x="71" y="11" width="200" height="16"/>
+                        <rect key="frame" x="79" y="13" width="200" height="18"/>
                         <constraints>
+                            <constraint firstAttribute="height" constant="18" id="Pub-ZH-xog"/>
                             <constraint firstAttribute="width" constant="200" id="Sk6-eQ-QDa"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
@@ -32,8 +33,9 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUO-8I-wMj">
-                        <rect key="frame" x="71" y="29" width="200" height="16"/>
+                        <rect key="frame" x="79" y="32" width="200" height="18"/>
                         <constraints>
+                            <constraint firstAttribute="height" constant="18" id="7Lg-Nm-Vr2"/>
                             <constraint firstAttribute="width" constant="200" id="QrW-9D-1L1"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
@@ -53,16 +55,22 @@
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ybW-AK-qXB" firstAttribute="leading" secondItem="ZiQ-25-RDK" secondAttribute="trailing" constant="6" id="Hmp-a8-H3P"/>
+                    <constraint firstItem="ybW-AK-qXB" firstAttribute="leading" secondItem="ZiQ-25-RDK" secondAttribute="trailing" constant="14" id="Hmp-a8-H3P"/>
+                    <constraint firstItem="ybW-AK-qXB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="JaM-pL-m2z"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Xkn-UO-Fuh" secondAttribute="trailing" constant="4" id="NaD-Wr-ACT"/>
-                    <constraint firstItem="WUO-8I-wMj" firstAttribute="top" secondItem="ybW-AK-qXB" secondAttribute="bottom" constant="2" id="QAK-0g-7ee"/>
-                    <constraint firstItem="ybW-AK-qXB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="Tdp-FL-hRX"/>
+                    <constraint firstItem="WUO-8I-wMj" firstAttribute="top" secondItem="ybW-AK-qXB" secondAttribute="bottom" constant="1" id="QAK-0g-7ee"/>
+                    <constraint firstItem="ybW-AK-qXB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="Tdp-FL-hRX"/>
                     <constraint firstItem="WUO-8I-wMj" firstAttribute="leading" secondItem="ybW-AK-qXB" secondAttribute="leading" id="ZLl-vI-gpK"/>
                     <constraint firstItem="Xkn-UO-Fuh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="fDZ-71-vTn"/>
                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ZiQ-25-RDK" secondAttribute="bottom" constant="7" id="mrM-4R-L3v"/>
                     <constraint firstItem="ZiQ-25-RDK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="p41-BX-p8T"/>
                     <constraint firstItem="ZiQ-25-RDK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="pNz-pc-ZjM"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Tdp-FL-hRX"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="ablumImageView" destination="ZiQ-25-RDK" id="ZlL-7W-PWD"/>
@@ -70,7 +78,7 @@
                 <outlet property="extraInfoButton" destination="Xkn-UO-Fuh" id="jyF-Ex-brk"/>
                 <outlet property="singerNameLabel" destination="ybW-AK-qXB" id="JvE-uq-ojg"/>
             </connections>
-            <point key="canvasLocation" x="615" y="291"/>
+            <point key="canvasLocation" x="579" y="295"/>
         </tableViewCell>
     </objects>
     <resources>

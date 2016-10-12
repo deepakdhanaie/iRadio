@@ -26,6 +26,7 @@ class HeaderView: UIView {
     var delegate:HeaderViewDelegate?
     
     override func awakeFromNib() {
+        
        likeButton?.tag =  LIKEBUTTONTAG
        shareButton?.tag = SHAREBUTTONTAG
        favouriteButton?.tag = FAVOURITEBUTTONTAG
