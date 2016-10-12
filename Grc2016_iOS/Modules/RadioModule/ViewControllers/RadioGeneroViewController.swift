@@ -106,10 +106,10 @@ extension RadioGeneroViewController: UICollectionViewDelegate, UICollectionViewD
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         let size : CGSize
         if section == 0 {
-            size = CGSize(width: 400, height: 280)
+            size = CGSize(width: self.view.frame.width, height: 230)
 
         } else {
-            size = CGSize(width: 400, height: 35)
+            size = CGSize(width: self.view.frame.width, height: 23)
 
         }
         

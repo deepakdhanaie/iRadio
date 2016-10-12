@@ -8,10 +8,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GeneroCollectionViewTopHeaderView" id="U6b-Vx-4bR" customClass="GeneroCollectionViewTopHeaderView" customModule="Grc2016_iOS" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="379" height="289"/>
+            <rect key="frame" x="0.0" y="0.0" width="379" height="230"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
-                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="fWq-bc-qMn">
+                <searchBar hidden="YES" contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="fWq-bc-qMn">
                     <rect key="frame" x="8" y="0.0" width="363" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="9d4-7V-2JF"/>
@@ -22,14 +22,14 @@
                     </connections>
                 </searchBar>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerImage" translatesAutoresizingMaskIntoConstraints="NO" id="d45-5h-dk4">
-                    <rect key="frame" x="0.0" y="50" width="379" height="182"/>
+                    <rect key="frame" x="0.0" y="1" width="379" height="182"/>
                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="182" id="VFT-kV-l0f"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYk-tb-eoa">
-                    <rect key="frame" x="22" y="247" width="186" height="34"/>
+                    <rect key="frame" x="22" y="198" width="186" height="34"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="186" id="mdk-55-nfI"/>
                         <constraint firstAttribute="height" constant="34" id="uBU-vr-X8j"/>
@@ -38,7 +38,7 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wlu-2t-TJV">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wlu-2t-TJV">
                     <rect key="frame" x="15" y="7" width="351" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="Sqn-aw-htk"/>
@@ -56,7 +56,7 @@
                 <constraint firstItem="d45-5h-dk4" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="aeh-fI-ehP"/>
                 <constraint firstAttribute="trailing" secondItem="fWq-bc-qMn" secondAttribute="trailing" constant="8" id="dAJ-hc-aTd"/>
                 <constraint firstItem="bYk-tb-eoa" firstAttribute="top" secondItem="d45-5h-dk4" secondAttribute="bottom" constant="15" id="iJX-xp-Iit"/>
-                <constraint firstItem="d45-5h-dk4" firstAttribute="top" secondItem="fWq-bc-qMn" secondAttribute="bottom" constant="6" id="nsq-BG-dER"/>
+                <constraint firstItem="d45-5h-dk4" firstAttribute="top" secondItem="fWq-bc-qMn" secondAttribute="bottom" constant="-43" id="nsq-BG-dER"/>
                 <constraint firstItem="Wlu-2t-TJV" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="15" id="toJ-Kg-APn"/>
                 <constraint firstItem="bYk-tb-eoa" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="22" id="tya-Tf-7sX"/>
                 <constraint firstAttribute="trailing" secondItem="Wlu-2t-TJV" secondAttribute="trailing" constant="13" id="uF5-Qg-Vgf"/>
@@ -66,7 +66,7 @@
                 <outlet property="labelLeadingConstraint" destination="tya-Tf-7sX" id="dpy-7n-aFf"/>
                 <outlet property="radioLabel" destination="bYk-tb-eoa" id="fTM-yb-Nhm"/>
             </connections>
-            <point key="canvasLocation" x="216.5" y="207.5"/>
+            <point key="canvasLocation" x="258.5" y="186"/>
         </collectionReusableView>
     </objects>
     <resources>
