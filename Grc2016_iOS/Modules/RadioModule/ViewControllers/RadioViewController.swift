@@ -23,9 +23,9 @@ class RadioViewController: UIViewController,UIPageViewControllerDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(RadioViewController.searchBarTapped(_:)), name: "searchBarTapped", object: nil)
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(RadioViewController.radioItemTapped(_:)), name: "radioItemTapped", object: nil)
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(RadioViewController.searchBarTapped(_:)), name: "searchBarTapped", object: nil)
+//        
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(RadioViewController.radioItemTapped(_:)), name: "radioItemTapped", object: nil)
 
 
         selectedRowIndexPath = NSIndexPath(forRow: 0,inSection: 0)
